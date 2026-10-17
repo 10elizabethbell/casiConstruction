@@ -44,6 +44,66 @@
         ],
         "createdAt": "2026-10-17T22:29:33.014Z",
         "reason": "body steps 16-20px; display steps 26px to 90px headline give the hierarchy"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgb(24, 119, 242)",
+        "createdAt": "2026-10-17T22:34:23.929Z",
+        "reason": "shipped one-off the DESIGN.md documenter derived from this code and chose not to canonize (see DESIGN.md 'not canonized')"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgb(188, 197, 203)",
+        "createdAt": "2026-10-17T22:34:24.016Z",
+        "reason": "shipped one-off the DESIGN.md documenter derived from this code and chose not to canonize (see DESIGN.md 'not canonized')"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#fff",
+        "createdAt": "2026-10-17T22:34:24.102Z",
+        "reason": "shipped one-off the DESIGN.md documenter derived from this code and chose not to canonize (see DESIGN.md 'not canonized')"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#ffb39f",
+        "createdAt": "2026-10-17T22:34:24.185Z",
+        "reason": "shipped one-off the DESIGN.md documenter derived from this code and chose not to canonize (see DESIGN.md 'not canonized')"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "24px",
+        "createdAt": "2026-10-17T22:34:24.267Z",
+        "reason": "shipped one-off the DESIGN.md documenter derived from this code and chose not to canonize (see DESIGN.md 'not canonized') (logo lockup / desktop headline cap / owner line / sent card)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "11.5px",
+        "createdAt": "2026-10-17T22:34:24.348Z",
+        "reason": "shipped one-off the DESIGN.md documenter derived from this code and chose not to canonize (see DESIGN.md 'not canonized') (logo lockup / desktop headline cap / owner line / sent card)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "6rem",
+        "createdAt": "2026-10-17T22:34:24.431Z",
+        "reason": "shipped one-off the DESIGN.md documenter derived from this code and chose not to canonize (see DESIGN.md 'not canonized') (logo lockup / desktop headline cap / owner line / sent card)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "22px",
+        "createdAt": "2026-10-17T22:34:24.509Z",
+        "reason": "shipped one-off the DESIGN.md documenter derived from this code and chose not to canonize (see DESIGN.md 'not canonized') (logo lockup / desktop headline cap / owner line / sent card)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "28px",
+        "createdAt": "2026-10-17T22:34:24.589Z",
+        "reason": "shipped one-off the DESIGN.md documenter derived from this code and chose not to canonize (see DESIGN.md 'not canonized') (logo lockup / desktop headline cap / owner line / sent card)"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "8px",
+        "createdAt": "2026-10-17T22:34:24.667Z",
+        "reason": "shipped one-off the DESIGN.md documenter derived from this code and chose not to canonize (see DESIGN.md 'not canonized') (message preview inside sent card)"
       }
     ]
   }
