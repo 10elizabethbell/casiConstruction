@@ -1,0 +1,411 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-17T22:33:33.808082+00:00",
+  "title": "Design System: Casi Construction LLC",
+  "extensions": {
+    "colorMeta": {
+      "card-paper": {
+        "role": "neutral",
+        "displayName": "Card Paper",
+        "canonical": "#f4f0e8",
+        "oklch": "oklch(95.6% 0.011 84.6)",
+        "tonalRamp": [
+          "oklch(15% 0.011 84.6)",
+          "oklch(26% 0.011 84.6)",
+          "oklch(38% 0.011 84.6)",
+          "oklch(50% 0.011 84.6)",
+          "oklch(62% 0.011 84.6)",
+          "oklch(74% 0.011 84.6)",
+          "oklch(85% 0.011 84.6)",
+          "oklch(95% 0.011 84.6)"
+        ]
+      },
+      "card-paper-band": {
+        "role": "neutral",
+        "displayName": "Card Paper Band",
+        "canonical": "#ebe4d6",
+        "oklch": "oklch(92.1% 0.020 84.6)",
+        "tonalRamp": [
+          "oklch(15% 0.020 84.6)",
+          "oklch(26% 0.020 84.6)",
+          "oklch(38% 0.020 84.6)",
+          "oklch(50% 0.020 84.6)",
+          "oklch(62% 0.020 84.6)",
+          "oklch(74% 0.020 84.6)",
+          "oklch(85% 0.020 84.6)",
+          "oklch(95% 0.020 84.6)"
+        ]
+      },
+      "card-ink": {
+        "role": "primary",
+        "displayName": "Card Ink",
+        "canonical": "#1f2a31",
+        "oklch": "oklch(27.8% 0.020 236.4)",
+        "tonalRamp": [
+          "oklch(15% 0.020 236.4)",
+          "oklch(26% 0.020 236.4)",
+          "oklch(38% 0.020 236.4)",
+          "oklch(50% 0.020 236.4)",
+          "oklch(62% 0.020 236.4)",
+          "oklch(74% 0.020 236.4)",
+          "oklch(85% 0.020 236.4)",
+          "oklch(95% 0.020 236.4)"
+        ]
+      },
+      "card-ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "#47535c",
+        "oklch": "oklch(43.5% 0.021 240.4)",
+        "tonalRamp": [
+          "oklch(15% 0.021 240.4)",
+          "oklch(26% 0.021 240.4)",
+          "oklch(38% 0.021 240.4)",
+          "oklch(50% 0.021 240.4)",
+          "oklch(62% 0.021 240.4)",
+          "oklch(74% 0.021 240.4)",
+          "oklch(85% 0.021 240.4)",
+          "oklch(95% 0.021 240.4)"
+        ]
+      },
+      "pencil-rule": {
+        "role": "neutral",
+        "displayName": "Pencil Rule",
+        "canonical": "#d6ccba",
+        "oklch": "oklch(84.8% 0.027 82.4)",
+        "tonalRamp": [
+          "oklch(15% 0.027 82.4)",
+          "oklch(26% 0.027 82.4)",
+          "oklch(38% 0.027 82.4)",
+          "oklch(50% 0.027 82.4)",
+          "oklch(62% 0.027 82.4)",
+          "oklch(74% 0.027 82.4)",
+          "oklch(85% 0.027 82.4)",
+          "oklch(95% 0.027 82.4)"
+        ]
+      },
+      "field-white": {
+        "role": "neutral",
+        "displayName": "Field White",
+        "canonical": "#fffdf8",
+        "oklch": "oklch(99.4% 0.007 88.6)",
+        "tonalRamp": [
+          "oklch(15% 0.007 88.6)",
+          "oklch(26% 0.007 88.6)",
+          "oklch(38% 0.007 88.6)",
+          "oklch(50% 0.007 88.6)",
+          "oklch(62% 0.007 88.6)",
+          "oklch(74% 0.007 88.6)",
+          "oklch(85% 0.007 88.6)",
+          "oklch(95% 0.007 88.6)"
+        ]
+      },
+      "control-edge": {
+        "role": "neutral",
+        "displayName": "Control Edge",
+        "canonical": "#8a806e",
+        "oklch": "oklch(60.4% 0.029 82.3)",
+        "tonalRamp": [
+          "oklch(15% 0.029 82.3)",
+          "oklch(26% 0.029 82.3)",
+          "oklch(38% 0.029 82.3)",
+          "oklch(50% 0.029 82.3)",
+          "oklch(62% 0.029 82.3)",
+          "oklch(74% 0.029 82.3)",
+          "oklch(85% 0.029 82.3)",
+          "oklch(95% 0.029 82.3)"
+        ]
+      },
+      "carpenters-pencil-red": {
+        "role": "secondary",
+        "displayName": "Carpenter's Pencil Red",
+        "canonical": "#b23a22",
+        "oklch": "oklch(52.0% 0.160 33.2)",
+        "tonalRamp": [
+          "oklch(15% 0.160 33.2)",
+          "oklch(26% 0.160 33.2)",
+          "oklch(38% 0.160 33.2)",
+          "oklch(50% 0.160 33.2)",
+          "oklch(62% 0.160 33.2)",
+          "oklch(74% 0.160 33.2)",
+          "oklch(85% 0.160 33.2)",
+          "oklch(95% 0.160 33.2)"
+        ]
+      },
+      "fresh-wood": {
+        "role": "tertiary",
+        "displayName": "Fresh Wood",
+        "canonical": "#9a5a22",
+        "oklch": "oklch(53.1% 0.109 57.8)",
+        "tonalRamp": [
+          "oklch(15% 0.109 57.8)",
+          "oklch(26% 0.109 57.8)",
+          "oklch(38% 0.109 57.8)",
+          "oklch(50% 0.109 57.8)",
+          "oklch(62% 0.109 57.8)",
+          "oklch(74% 0.109 57.8)",
+          "oklch(85% 0.109 57.8)",
+          "oklch(95% 0.109 57.8)"
+        ]
+      },
+      "weathered-board": {
+        "role": "neutral",
+        "displayName": "Weathered Board",
+        "canonical": "#8c867c",
+        "oklch": "oklch(62.2% 0.016 80.7)",
+        "tonalRamp": [
+          "oklch(15% 0.016 80.7)",
+          "oklch(26% 0.016 80.7)",
+          "oklch(38% 0.016 80.7)",
+          "oklch(50% 0.016 80.7)",
+          "oklch(62% 0.016 80.7)",
+          "oklch(74% 0.016 80.7)",
+          "oklch(85% 0.016 80.7)",
+          "oklch(95% 0.016 80.7)"
+        ]
+      },
+      "board-gap": {
+        "role": "neutral",
+        "displayName": "Board Gap",
+        "canonical": "#221d19",
+        "oklch": "oklch(23.5% 0.011 60.9)",
+        "tonalRamp": [
+          "oklch(15% 0.011 60.9)",
+          "oklch(26% 0.011 60.9)",
+          "oklch(38% 0.011 60.9)",
+          "oklch(50% 0.011 60.9)",
+          "oklch(62% 0.011 60.9)",
+          "oklch(74% 0.011 60.9)",
+          "oklch(85% 0.011 60.9)",
+          "oklch(95% 0.011 60.9)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline only; from 900px clamp(3.6rem, 6.2vw, 6rem)."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Step titles (status panel heading at 28px)."
+      },
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "Step numbers, in fresh wood."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text, 32-38ch measure."
+      },
+      "body-lead": {
+        "displayName": "Body Lead",
+        "purpose": "Hero promise line."
+      },
+      "list-item": {
+        "displayName": "List Item",
+        "purpose": "Service rows."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Form legends and labels."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "All buttons."
+      },
+      "note": {
+        "displayName": "Note",
+        "purpose": "Helper text, errors, footer fine print."
+      }
+    },
+    "shadows": [
+      {
+        "name": "sander-on-wood",
+        "value": "canvas shadow: rgba(20,12,6,.38) blur 12px offset 4px 7px",
+        "purpose": "The palm sander's shadow on the deck boards. The only shadow in the system; never applied to UI."
+      }
+    ],
+    "motion": [
+      {
+        "name": "state-transition",
+        "value": "0.2s (background-color, color, border-color)",
+        "purpose": "Buttons, link card, row arrow hover/focus."
+      },
+      {
+        "name": "chip-transition",
+        "value": "0.15s",
+        "purpose": "Chip check and hover."
+      },
+      {
+        "name": "SAND",
+        "value": "0.2",
+        "purpose": "Weathering removed per frame of sanding."
+      },
+      {
+        "name": "REGROW",
+        "value": "0.0035",
+        "purpose": "Weathering regrowth per frame."
+      },
+      {
+        "name": "GHOST_DELAY",
+        "value": "2600ms",
+        "purpose": "Idle time before the autonomous sander resumes."
+      },
+      {
+        "name": "DUST_MAX",
+        "value": "200 phone / 480 desktop (60 per plank divider)",
+        "purpose": "Sawdust particle cap."
+      },
+      {
+        "name": "PLANK",
+        "value": "40px phone / 50px desktop, 4px gap",
+        "purpose": "Board width."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce",
+        "purpose": "Stops the deck loop and all transitions; smooth scroll off."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "gutter",
+        "value": "700px"
+      },
+      {
+        "name": "plank",
+        "value": "760px"
+      },
+      {
+        "name": "wide",
+        "value": "900px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Ink-filled main action; fills pencil red on hover.",
+      "html": "<a class=\"ds-btn ds-btn-main\" href=\"#\">Get a free estimate</a>",
+      "css": ":host{--paper:#f4f0e8;--paper-2:#ebe4d6;--ink:#1f2a31;--ink-2:#47535c;--rule:#d6ccba;--field:#fffdf8;--edge:#8a806e;--red:#b23a22;--wood:#9a5a22;--display:\"Avenir Next Condensed\",\"Helvetica Neue Condensed\",\"Roboto Condensed\",\"Arial Narrow\",sans-serif-condensed,system-ui,sans-serif;--body:system-ui,-apple-system,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 22px;border-radius:10px;border:2px solid var(--ink);font:700 18px/1 var(--body);text-decoration:none;cursor:pointer;transition:background-color .2s,color .2s,border-color .2s}.ds-btn:focus-visible{outline:3px solid var(--red);outline-offset:3px}.ds-btn-main{background:var(--ink);color:var(--paper)}.ds-btn-main:hover{background:var(--red);border-color:var(--red)}"
+    },
+    {
+      "name": "Line Button",
+      "kind": "button",
+      "refersTo": "button-line",
+      "description": "Outlined partner to the primary button; same size and border.",
+      "html": "<a class=\"ds-btn ds-btn-line\" href=\"#\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z\"/></svg>848-525-7973</a>",
+      "css": ":host{--paper:#f4f0e8;--paper-2:#ebe4d6;--ink:#1f2a31;--ink-2:#47535c;--rule:#d6ccba;--field:#fffdf8;--edge:#8a806e;--red:#b23a22;--wood:#9a5a22;--display:\"Avenir Next Condensed\",\"Helvetica Neue Condensed\",\"Roboto Condensed\",\"Arial Narrow\",sans-serif-condensed,system-ui,sans-serif;--body:system-ui,-apple-system,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 22px;border-radius:10px;border:2px solid var(--ink);font:700 18px/1 var(--body);text-decoration:none;cursor:pointer;transition:background-color .2s,color .2s,border-color .2s}.ds-btn:focus-visible{outline:3px solid var(--red);outline-offset:3px}.ds-btn-line{background:transparent;color:var(--ink)}.ds-btn-line svg{flex:none}.ds-btn-line:hover{border-color:var(--red);color:var(--red)}"
+    },
+    {
+      "name": "Checkbox Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Multi-select job type; checked inverts to ink.",
+      "html": "<div class=\"ds-chips\"><label class=\"ds-chip\"><input type=\"checkbox\" checked><span>Carpentry</span></label><label class=\"ds-chip\"><input type=\"checkbox\"><span>Decks / railings</span></label></div>",
+      "css": ":host{--paper:#f4f0e8;--paper-2:#ebe4d6;--ink:#1f2a31;--ink-2:#47535c;--rule:#d6ccba;--field:#fffdf8;--edge:#8a806e;--red:#b23a22;--wood:#9a5a22;--display:\"Avenir Next Condensed\",\"Helvetica Neue Condensed\",\"Roboto Condensed\",\"Arial Narrow\",sans-serif-condensed,system-ui,sans-serif;--body:system-ui,-apple-system,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif}.ds-chips{display:flex;flex-wrap:wrap;gap:10px;font-family:var(--body);color:var(--ink)}.ds-chip{position:relative}.ds-chip input{position:absolute;opacity:0;width:1px;height:1px}.ds-chip span{display:flex;align-items:center;gap:8px;min-height:46px;padding:0 16px;border:2px solid var(--edge);border-radius:10px;background:var(--field);font-weight:600;font-size:16px;cursor:pointer;transition:border-color .15s,background-color .15s,color .15s}.ds-chip span::before{content:\"\";width:16px;height:16px;border-radius:4px;border:2px solid var(--ink-2);flex:none;background:center/12px no-repeat}.ds-chip input:checked+span{background:var(--ink);border-color:var(--ink);color:var(--paper)}.ds-chip input:checked+span::before{border-color:var(--paper);background-color:var(--paper);background-image:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M2.5 8.6 6.2 12 13.6 3.6' fill='none' stroke='%231f2a31' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E\")}.ds-chip input:focus-visible+span,.ds-chip:hover span{outline:2px solid var(--red);outline-offset:2px}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "text-field",
+      "description": "Labelled text input on field white with a red focus ring and caret.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-town\">Your town</label><input id=\"ds-town\" type=\"text\" placeholder=\"e.g. Forked River\"></div>",
+      "css": ":host{--paper:#f4f0e8;--paper-2:#ebe4d6;--ink:#1f2a31;--ink-2:#47535c;--rule:#d6ccba;--field:#fffdf8;--edge:#8a806e;--red:#b23a22;--wood:#9a5a22;--display:\"Avenir Next Condensed\",\"Helvetica Neue Condensed\",\"Roboto Condensed\",\"Arial Narrow\",sans-serif-condensed,system-ui,sans-serif;--body:system-ui,-apple-system,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif}.ds-field{font-family:var(--body);color:var(--ink);max-width:320px}.ds-field label{display:block;font-weight:700;font-size:17px;margin-bottom:10px}.ds-field input{width:100%;box-sizing:border-box;font:500 17px/1.4 var(--body);color:var(--ink);background:var(--field);border:2px solid var(--edge);border-radius:10px;padding:13px 14px;min-height:52px;caret-color:var(--red)}.ds-field input::placeholder{color:#6d6658}.ds-field input:hover,.ds-field input:focus{outline:2px solid var(--red);outline-offset:1px}"
+    },
+    {
+      "name": "Service Row",
+      "kind": "nav",
+      "refersTo": "service-row",
+      "description": "Whole-row link between pencil rules; only the circular arrow lights up.",
+      "html": "<ul class=\"ds-rows\"><li><a class=\"ds-row\" href=\"#\">Carpentry<span class=\"ds-arrow\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h13m0 0-5-5m5 5-5 5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a></li><li><a class=\"ds-row\" href=\"#\">Decks and railings<span class=\"ds-arrow\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h13m0 0-5-5m5 5-5 5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a></li></ul>",
+      "css": ":host{--paper:#f4f0e8;--paper-2:#ebe4d6;--ink:#1f2a31;--ink-2:#47535c;--rule:#d6ccba;--field:#fffdf8;--edge:#8a806e;--red:#b23a22;--wood:#9a5a22;--display:\"Avenir Next Condensed\",\"Helvetica Neue Condensed\",\"Roboto Condensed\",\"Arial Narrow\",sans-serif-condensed,system-ui,sans-serif;--body:system-ui,-apple-system,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif}.ds-rows{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule);font-family:var(--body);color:var(--ink)}.ds-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:10px 0;border-bottom:1px solid var(--rule);text-decoration:none;color:inherit;font-size:20px;font-weight:650}.ds-row:focus-visible{outline:none}.ds-arrow{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;border:1.5px solid var(--ink-2);color:var(--ink);flex:none;transition:background-color .2s,border-color .2s,color .2s}.ds-row:hover .ds-arrow,.ds-row:focus-visible .ds-arrow{background:var(--red);border-color:var(--red);color:var(--paper)}.ds-row:focus-visible .ds-arrow{outline:3px solid var(--red);outline-offset:3px}"
+    },
+    {
+      "name": "Step",
+      "kind": "custom",
+      "refersTo": "",
+      "description": "Numbered step: wood numeral beside condensed title, above a pencil rule.",
+      "html": "<ol class=\"ds-steps\"><li><b>2</b><h3>Free estimate</h3><p>I look at the job and give you a straight price before anything starts.</p></li></ol>",
+      "css": ":host{--paper:#f4f0e8;--paper-2:#ebe4d6;--ink:#1f2a31;--ink-2:#47535c;--rule:#d6ccba;--field:#fffdf8;--edge:#8a806e;--red:#b23a22;--wood:#9a5a22;--display:\"Avenir Next Condensed\",\"Helvetica Neue Condensed\",\"Roboto Condensed\",\"Arial Narrow\",sans-serif-condensed,system-ui,sans-serif;--body:system-ui,-apple-system,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif}.ds-steps{list-style:none;margin:0;padding:0;font:400 17px/1.55 var(--body);color:var(--ink)}.ds-steps li{display:grid;grid-template-columns:52px 1fr;gap:4px 14px;padding-top:18px;border-top:1px solid var(--rule)}.ds-steps b{grid-row:span 2;font:800 46px/1 var(--display);font-stretch:condensed;color:var(--wood)}.ds-steps h3{margin:0;font:800 26px/1.05 var(--display);font-stretch:condensed;text-transform:uppercase;letter-spacing:-.01em;padding-top:6px}.ds-steps p{margin:0;color:var(--ink-2);max-width:36ch}"
+    },
+    {
+      "name": "Link Card",
+      "kind": "card",
+      "refersTo": "link-card",
+      "description": "Ink-outlined outbound link card; text turns red on hover.",
+      "html": "<a class=\"ds-fb\" href=\"#\"><span class=\"ds-fb-t\">Find me on Facebook.</span><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h13m0 0-5-5m5 5-5 5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ":host{--paper:#f4f0e8;--paper-2:#ebe4d6;--ink:#1f2a31;--ink-2:#47535c;--rule:#d6ccba;--field:#fffdf8;--edge:#8a806e;--red:#b23a22;--wood:#9a5a22;--display:\"Avenir Next Condensed\",\"Helvetica Neue Condensed\",\"Roboto Condensed\",\"Arial Narrow\",sans-serif-condensed,system-ui,sans-serif;--body:system-ui,-apple-system,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif}.ds-fb{display:flex;align-items:center;gap:14px;min-height:64px;padding:12px 18px;border:2px solid var(--ink);border-radius:12px;background:var(--paper);color:var(--ink);text-decoration:none;font:750 18px/1.3 var(--body);max-width:440px;transition:border-color .2s,color .2s}.ds-fb svg{margin-left:auto;width:20px;height:20px}.ds-fb:hover{border-color:var(--red);color:var(--red)}.ds-fb:focus-visible{outline:3px solid var(--red);outline-offset:3px}"
+    },
+    {
+      "name": "Section Heading",
+      "kind": "custom",
+      "refersTo": "",
+      "description": "Condensed uppercase card lettering for h2.",
+      "html": "<h2 class=\"ds-h\">No job is to small.</h2>",
+      "css": ":host{--paper:#f4f0e8;--paper-2:#ebe4d6;--ink:#1f2a31;--ink-2:#47535c;--rule:#d6ccba;--field:#fffdf8;--edge:#8a806e;--red:#b23a22;--wood:#9a5a22;--display:\"Avenir Next Condensed\",\"Helvetica Neue Condensed\",\"Roboto Condensed\",\"Arial Narrow\",sans-serif-condensed,system-ui,sans-serif;--body:system-ui,-apple-system,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif}.ds-h{margin:0;font-family:var(--display);font-weight:800;font-stretch:condensed;text-transform:uppercase;letter-spacing:-.01em;line-height:.95;font-size:clamp(2.3rem,9vw,3.6rem);color:var(--ink);text-wrap:balance}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Business Card on the Deck",
+    "overview": "Everything printed is the owner's business card: warm white card stock, charcoal-blue ink, the hammer-in-a-circle mark, condensed uppercase lettering. Everything alive is a deck: real top-down boards drawn on canvas (butt joints, screw pairs over 16-inch joists, knots that bend the grain), a silver weathered layer masked over fresh honey wood, and a palm sander that sands that weathering away along the grain and throws sawdust. The two never blend. The card is flat, quiet, and legible; the deck is the one place with texture, colour, and motion.\n\nThe page is phone-first and plain-spoken. Density is low: one column on a phone, wide gutters, 64px between sections, every tap target at least 44px tall. Hierarchy comes from heavy condensed uppercase headings against plain sentence-case body, not from colour. Colour is almost entirely ink on paper; the single accent, carpenter's-pencil red, is reserved for the moment a visitor touches something.\n\nThe deck recurs at three scales: the hero (a full run of boards, sanded by an autonomous \"ghost\" pass until a finger or mouse takes the sander over), single-plank dividers between sections (one board, sanded left to right as the page scrolls), and a short run of boards above the footer.",
+    "keyCharacteristics": [
+      "Two-material world: flat ink-on-card for type and controls, painted wood for the living element.",
+      "Restrained palette: ink, paper, a darker paper band, pencil-rule lines; red only on hover and focus.",
+      "Heavy condensed uppercase display over a plain system body stack.",
+      "Rules, not boxes: lists and steps separate with 1px pencil rules rather than cards.",
+      "One interactive signature (the sanding deck), repeated at hero, divider, and footer scale."
+    ],
+    "rules": [
+      {
+        "name": "The Pencil Only Answers Rule",
+        "body": "Carpenter's-pencil red never appears at rest. It shows up only on hover, focus, the caret, or an error. If a screen shows red with nobody touching it, something is wrong (error state excepted).",
+        "section": "colors"
+      },
+      {
+        "name": "The No Brand Colour Rule",
+        "body": "The business has no colours beyond black on white. Don't add a brand blue, a safety orange, or a wood-tone UI accent; wood colour lives in the deck and the step numerals.",
+        "section": "colors"
+      },
+      {
+        "name": "The Card Lettering Rule",
+        "body": "Every h1, h2, and h3 uses the condensed display stack at 800, uppercase, tight. Body, labels, and buttons never go uppercase.",
+        "section": "typography"
+      },
+      {
+        "name": "The Lockup Exception Rule",
+        "body": "Wide letterspacing (0.16em) exists only in the \"CONSTRUCTION\" line of the header lockup and the arched footer logo. It is part of the mark, not a style for headings or labels.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Card Rule",
+        "body": "UI elements (buttons, chips, inputs, panels) never take a box-shadow. If something needs to stand out, give it an ink outline or the ink fill.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep the page ink on card paper and save carpenter's-pencil red (#b23a22) for hover, focus, caret, and errors.",
+      "Do set every heading in the condensed display stack at 800, uppercase, line-height 0.95, and keep body and controls in sentence case on the system stack.",
+      "Do separate list items and steps with 1px pencil rules (#d6ccba) and separate sections with the paper band, not with boxes or shadows.",
+      "Do build primary and secondary buttons as a matched pair: same 56px height, 10px radius, and 2px border; only the fill differs.",
+      "Do keep every tap target at least 44px tall (buttons 56px, rows 64px, chips 46px).",
+      "Do reuse the sanding deck for new texture or dividers, tuned through SAND, REGROW, GHOST_DELAY, DUST_MAX, and PLANK, and paint the striped weathered-board fallback behind its canvas.",
+      "Do inline icons as SVG symbols drawn in currentColor."
+    ],
+    "donts": [
+      "Don't load web fonts; the system stack is the house rule.",
+      "Don't show red at rest, and don't add brand colours the business card doesn't have.",
+      "Don't put box-shadows on UI elements; the only shadow in the system is the sander's on the wood.",
+      "Don't use wide letterspacing outside the logo lockup.",
+      "Don't wrap services or steps in icon cards; a service is a ruled row with an arrow cue.",
+      "Don't highlight a whole service row on hover; only its arrow fills."
+    ]
+  }
+}
