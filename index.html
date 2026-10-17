@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Casi Construction LLC · Forked River, NJ</title>
+<meta name="description" content="Casi Construction LLC in Forked River, NJ: carpentry, bathrooms, kitchens, flooring and tile, windows and doors, decks, painting and stucco. Licensed and insured. Free estimates. No job is to small.">
+<meta name="theme-color" content="#f4f0e8">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Casi Construction LLC · Forked River, NJ">
+<meta property="og:description" content="Carpentry, bathrooms, kitchens, floors, decks and stucco. Licensed and insured. Free estimates. No job is to small.">
+<meta property="og:url" content="https://10elizabethbell.github.io/casiConstruction/">
+<meta property="og:image" content="https://10elizabethbell.github.io/casiConstruction/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3CclipPath id='c'%3E%3Ccircle cx='60' cy='60' r='58'/%3E%3C/clipPath%3E%3Ccircle cx='60' cy='60' r='58' fill='%231f2a31'/%3E%3Cg clip-path='url(%23c)' fill='%23f4f0e8'%3E%3Cpath d='M52 48h16l2 68H50z'/%3E%3Cpath d='M18 30q0-3 3-3h13q3 0 3 3v3h12v-6h20c15 0 27 9 34 27 1 3-2 5-4 2-8-11-17-14-30-13v6H49v-5H37v3q0 3-3 3H21q-3 0-3-3z'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+/* ===== Tokens ===== */
+:root{
+  --paper:#f4f0e8;      /* his business card */
+  --paper-2:#ebe4d6;    /* a shade darker band */
+  --ink:#1f2a31;        /* charcoal-blue card ink */
+  --ink-2:#47535c;      /* secondary text */
+  --rule:#d6ccba;       /* pencil rule */
+  --field:#fffdf8;
+  --red:#b23a22;        /* carpenter's pencil: hover/focus accent only */
+  --wood:#9a5a22;       /* fresh wood, large numerals */
+  --gutter:16px;
+  --display:"Avenir Next Condensed","Helvetica Neue Condensed","Roboto Condensed","Arial Narrow",sans-serif-condensed,system-ui,sans-serif;
+  --body:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;overscroll-behavior-y:none;scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.55 var(--body);-webkit-font-smoothing:antialiased}
+::selection{background:var(--ink);color:var(--paper)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+h1,h2,h3{font-family:var(--display);font-weight:800;font-stretch:condensed;text-transform:uppercase;letter-spacing:-.01em;line-height:.95;margin:0;text-wrap:balance}
+p{margin:0}
+svg{display:block}
+.wrap{padding:0 var(--gutter);max-width:1240px;margin:0 auto}
+@media (min-width:700px){:root{--gutter:32px}}
+
+/* ===== Header ===== */
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px var(--gutter);max-width:1240px;margin:0 auto}
+.mark{display:flex;align-items:center;gap:10px;text-decoration:none;min-height:44px}
+.mark svg{width:40px;height:40px;flex:none}
+.mark span{display:grid;font-family:var(--display);font-weight:800;font-stretch:condensed;line-height:.9;text-transform:uppercase}
+.mark b{font-size:24px;letter-spacing:.02em}
+.mark small{font-size:11.5px;font-weight:700;letter-spacing:.16em}
+.bar-call{display:flex;align-items:center;gap:7px;min-height:44px;padding:0 2px;font-weight:700;font-size:17px;text-decoration:none;white-space:nowrap;font-variant-numeric:tabular-nums}
+.bar-call svg{width:18px;height:18px}
+.bar-call:hover{color:var(--red)}
+
+/* ===== Hero ===== */
+.hero{display:grid}
+.hero-text{padding:20px var(--gutter) 0}
+.hero h1{font-size:clamp(2.75rem,13.2vw,5.6rem)}
+.promise{margin-top:16px;font-size:clamp(17px,4.6vw,20px);max-width:32ch}
+.creds{margin-top:12px;font-size:15px;color:var(--ink-2);font-weight:600}
+.creds span{white-space:nowrap}
+.creds i{font-style:normal;padding:0 .15em;color:#8a806e}
+.cta{display:grid;gap:12px;margin-top:22px}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 22px;border-radius:10px;border:2px solid var(--ink);font:700 18px/1 var(--body);text-decoration:none;cursor:pointer;transition:background-color .2s,color .2s,border-color .2s}
+.btn-main{background:var(--ink);color:var(--paper)}
+.btn-main:hover{background:var(--red);border-color:var(--red)}
+.btn-line{background:transparent;color:var(--ink)}
+.btn-line:hover{border-color:var(--red);color:var(--red)}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* The deck: weathered boards sanded back to fresh wood */
+.deck{position:relative;height:clamp(220px,34vh,330px);height:clamp(220px,34svh,330px);margin-top:26px;touch-action:pan-y;user-select:none;-webkit-user-select:none;overflow:hidden;
+  background:repeating-linear-gradient(180deg,#8c867c 0 44px,#221d19 44px 48px)}
+.deck canvas{position:absolute;inset:0;width:100%;height:100%}
+@media (min-width:900px){
+  .hero{grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);min-height:min(calc(100svh - 68px),820px)}
+  .hero-text{align-self:center;padding:40px 48px 64px max(var(--gutter),calc((100vw - 1240px)/2 + var(--gutter)))}
+  .hero h1{font-size:clamp(3.6rem,6.2vw,6rem)}
+  .cta{grid-template-columns:auto auto;justify-content:start}
+  .deck{height:auto;margin:0;border-radius:18px 0 0 18px}
+}
+
+/* ===== Sections ===== */
+section{padding:64px 0}
+.sec-h{font-size:clamp(2.3rem,9vw,3.6rem);margin-bottom:24px}
+.band{background:var(--paper-2)}
+
+/* Services: whole row is the link, only the arrow lights up */
+.rows{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
+.row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:10px 0;border-bottom:1px solid var(--rule);text-decoration:none;font-size:20px;font-weight:650}
+.row:hover,.row:focus-visible{outline:none;background:none;box-shadow:none}
+.arrow{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;border:1.5px solid var(--ink-2);color:var(--ink);flex:none;transition:background-color .2s,border-color .2s,color .2s}
+.arrow svg{width:18px;height:18px}
+.row:hover .arrow,.row:focus-visible .arrow{background:var(--red);border-color:var(--red);color:var(--paper)}
+.row:focus-visible .arrow{outline:3px solid var(--red);outline-offset:3px}
+.rows-note{margin-top:16px;color:var(--ink-2);font-size:16px}
+@media (min-width:900px){
+  .services .wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.6fr);gap:48px}
+  .rows{display:grid;grid-template-columns:1fr 1fr;column-gap:40px;border-top:0}
+  .rows li:nth-child(-n+2){border-top:1px solid var(--rule)}
+}
+
+/* How a job goes */
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:28px}
+.steps li{display:grid;grid-template-columns:52px 1fr;gap:4px 14px;padding-top:18px;border-top:1px solid var(--rule)}
+.steps b{grid-row:span 2;font:800 46px/1 var(--display);font-stretch:condensed;color:var(--wood)}
+.steps h3{font-size:26px;line-height:1.05;padding-top:6px}
+.steps p{color:var(--ink-2);max-width:36ch}
+@media (min-width:900px){.steps{grid-template-columns:repeat(3,1fr);gap:40px}}
+
+/* Owner */
+.owner .wrap{display:grid;gap:22px}
+.owner p{font-size:clamp(18px,4.8vw,22px);max-width:38ch}
+.owner .where{font-size:17px;color:var(--ink-2)}
+.fb{display:flex;align-items:center;gap:14px;min-height:64px;padding:12px 18px;border:2px solid var(--ink);border-radius:12px;background:var(--paper);text-decoration:none;font-weight:750;font-size:19px;max-width:440px;transition:border-color .2s,color .2s}
+.fb .fb-i{width:36px;height:36px;border-radius:50%;background:#1877f2;color:#fff;display:grid;place-items:center;flex:none}
+.fb .fb-i svg{width:20px;height:20px}
+.fb .go{margin-left:auto;width:20px;height:20px}
+.fb:hover{border-color:var(--red);color:var(--red)}
+@media (min-width:900px){.owner .wrap{grid-template-columns:1.4fr 1fr;align-items:end;column-gap:64px}}
+
+/* Estimate form */
+.estimate .lede{font-size:18px;max-width:40ch;margin:-8px 0 26px}
+form{display:grid;gap:22px;max-width:640px}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+legend,label.l{display:block;font-weight:700;font-size:17px;margin-bottom:10px;padding:0}
+.opt{font-weight:500;color:var(--ink-2)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;width:1px;height:1px}
+.chip span{display:flex;align-items:center;gap:8px;min-height:46px;padding:0 16px;border:2px solid #c9bfae;border-radius:10px;background:var(--field);font-weight:600;font-size:16px;cursor:pointer;transition:border-color .15s,background-color .15s,color .15s}
+.chip span::before{content:"";width:16px;height:16px;border-radius:4px;border:2px solid var(--ink-2);flex:none;background:center/12px no-repeat}
+.chip input:checked + span{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.chip input:checked + span::before{border-color:var(--paper);background-color:var(--paper);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M2.5 8.6 6.2 12 13.6 3.6' fill='none' stroke='%231f2a31' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")}
+.chip:hover span,.chip input:focus-visible + span{outline:2px solid var(--red);outline-offset:2px}
+input[type=text],textarea{width:100%;font:500 17px/1.4 var(--body);color:var(--ink);background:var(--field);border:2px solid #c9bfae;border-radius:10px;padding:13px 14px;min-height:52px;caret-color:var(--red)}
+textarea{min-height:110px;resize:vertical}
+input[type=text]:hover,textarea:hover,input[type=text]:focus,textarea:focus{outline:2px solid var(--red);outline-offset:1px}
+::placeholder{color:#6d6658}
+.two{display:grid;gap:22px}
+@media (min-width:700px){.two{grid-template-columns:1fr 1fr}}
+.err{display:none;margin-top:8px;color:var(--red);font-weight:650;font-size:15.5px}
+.bad .err{display:block}
+.bad input[type=text]{border-color:var(--red)}
+form .btn{width:100%}
+form .btn:hover,form .btn:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+.how-send{font-size:15.5px;color:var(--ink-2);margin-top:-10px}
+@media (min-width:700px){form .btn{width:auto;justify-self:start}}
+.sent{display:none;max-width:640px;margin-top:26px;padding:20px;border:2px solid var(--ink);border-radius:12px;background:var(--field)}
+.sent.on{display:block}
+.sent h3{font-size:28px;margin-bottom:8px}
+.sent pre{white-space:pre-wrap;font:500 15.5px/1.5 var(--body);background:var(--paper);border-radius:8px;padding:12px 14px;margin:14px 0}
+.sent .acts{display:grid;gap:10px}
+@media (min-width:700px){.sent .acts{grid-template-columns:auto auto;justify-content:start}}
+
+/* ===== Footer ===== */
+.foot-deck{height:150px;margin:0;background:repeating-linear-gradient(180deg,#8c867c 0 40px,#221d19 40px 44px)}
+footer{background:var(--ink);color:var(--paper);padding:44px 0 calc(40px + env(safe-area-inset-bottom))}
+footer .wrap{display:grid;gap:26px}
+.logo-arc{width:min(280px,78vw);height:auto;color:var(--paper)}
+.contact{list-style:none;margin:0;padding:0;display:grid;gap:4px;font-size:18px}
+.contact a{display:inline-flex;align-items:center;gap:10px;min-height:44px;text-decoration:none;font-weight:650}
+.contact a:hover{color:#ffb39f}
+.contact svg{width:20px;height:20px;flex:none;opacity:.8}
+.fine{font-size:15px;color:#bcc5cb}
+@media (min-width:900px){footer .wrap{grid-template-columns:auto 1fr auto;align-items:center;column-gap:64px}}
+
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body id="top">
+<!--
+THESIS: A carpenter's deck, not a contractor template. The page opens on a run of weathered, silver deck boards with a palm sander working across them, sanding the grain back to fresh honey wood and kicking up sawdust; your finger or mouse takes the sander over. The owner's care carries the sell ("I build it like it's mine", "no job is to small"). Refuses stock photos of other people's work, icon-card grids, invented reviews or years.
+OWN-WORLD: His business card: warm white paper (#f4f0e8), charcoal-blue ink (#1f2a31), the hammer-in-a-circle mark with a nail each side, condensed uppercase lettering. The deck: real top-down boards (butt joints, screw pairs over each joist, knots that bend the grain), weathered gray over fresh wood. Carpenter's-pencil red (#b23a22) appears only on hover and focus.
+STORY: Visitor sees who (Casi Construction, Forked River NJ), what (repairs to renovations: carpentry, bathrooms, kitchens, floors, decks, stucco), why trust (licensed and insured, free estimates, deals with the owner), and asks for a free estimate by text or calls the number in the corner.
+FIRST VIEWPORT (phone): mark + CASI / CONSTRUCTION lockup, tap-to-call number top-right; "I build it like it's mine." headline; one-line promise; credentials line; full-width "Get a free estimate" and outlined "What I do"; the deck strip below with the sander already working.
+FORM: Weathered deck being sanded, #1 of six trade worlds (deck sanding, blueprint drawing itself, tile being laid, stucco troweled, paint roller, tape measure). Runner-up: a blueprint whose pencil lines draw the house as you scroll.
+-->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs><clipPath id="mark-clip"><circle cx="60" cy="60" r="58"/></clipPath></defs>
+  <symbol id="mark" viewBox="0 0 120 120">
+    <circle cx="60" cy="60" r="58" fill="currentColor"/>
+    <g clip-path="url(#mark-clip)" fill="var(--mark-cut,#f4f0e8)">
+      <path d="M52 48h16l2 68H50z"/>
+      <path d="M18 30q0-3 3-3h13q3 0 3 3v3h12v-6h20c15 0 27 9 34 27 1 3-2 5-4 2-8-11-17-14-30-13v6H49v-5H37v3q0 3-3 3H21q-3 0-3-3z"/>
+    </g>
+  </symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h13m0 0-5-5m5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-text" viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4v-4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm3 6.2a1.3 1.3 0 1 0 0 2.6 1.3 1.3 0 0 0 0-2.6Zm5 0a1.3 1.3 0 1 0 0 2.6 1.3 1.3 0 0 0 0-2.6Zm5 0a1.3 1.3 0 1 0 0 2.6 1.3 1.3 0 0 0 0-2.6Z"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 22v-8.2h2.8l.4-3.2h-3.2V8.5c0-.9.3-1.6 1.6-1.6h1.7V4.1c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.3v3.2h2.8V22h3.4Z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path fill="currentColor" d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm1 2.4V17h16V7.4l-8 5.4-8-5.4ZM5.6 7 12 11.3 18.4 7H5.6Z"/></symbol>
+</svg>
+
+<header class="bar">
+  <a class="mark" href="#top" aria-label="Casi Construction, top of page">
+    <svg aria-hidden="true" style="color:var(--ink)"><use href="#mark"/></svg>
+    <span><b>Casi</b><small>Construction</small></span>
+  </a>
+  <a class="bar-call" href="tel:+18485257973"><svg aria-hidden="true"><use href="#i-phone"/></svg>848-525-7973</a>
+</header>
+
+<main>
+<section class="hero" style="padding:0" aria-labelledby="hero-h">
+  <div class="hero-text">
+    <h1 id="hero-h">I build it like it's mine.</h1>
+    <p class="promise">From one sticking door to a whole new bathroom, I treat your house the way I'd want someone to treat mine.</p>
+    <p class="creds"><span>Licensed and insured</span> <i>·</i> <span>Free estimates</span> <i>·</i> <span>Forked River, NJ</span></p>
+    <div class="cta">
+      <a class="btn btn-main" href="#estimate">Get a free estimate</a>
+      <a class="btn btn-line" href="#services">What I do</a>
+    </div>
+  </div>
+  <div class="deck" id="hero-deck" aria-hidden="true"><canvas></canvas></div>
+</section>
+
+<section class="services" id="services" aria-labelledby="svc-h">
+  <div class="wrap">
+    <div>
+      <h2 class="sec-h" id="svc-h">What I do</h2>
+    </div>
+    <div>
+      <ul class="rows" id="rows">
+        <li><a class="row" data-job="Carpentry">Carpentry<span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+        <li><a class="row" data-job="Bathroom">Bathrooms<span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+        <li><a class="row" data-job="Kitchen">Kitchens<span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+        <li><a class="row" data-job="Flooring and tile">Flooring and tile<span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+        <li><a class="row" data-job="Windows and doors">Windows and doors<span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+        <li><a class="row" data-job="Deck and railings">Decks and railings<span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+        <li><a class="row" data-job="Painting">Painting<span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+        <li><a class="row" data-job="Stucco">Stucco<span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+        <li><a class="row" data-job="A repair">Repairs<span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+      </ul>
+      <p class="rows-note">Tap one to text me about it.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band how" aria-labelledby="how-h">
+  <div class="wrap">
+    <h2 class="sec-h" id="how-h">How a job goes</h2>
+    <ol class="steps">
+      <li><b>1</b><h3>Tell me what's wrong</h3><p>Text me a photo or call. Big or small, I want to hear about it.</p></li>
+      <li><b>2</b><h3>Free estimate</h3><p>I look at the job and give you a straight price before anything starts.</p></li>
+      <li><b>3</b><h3>I do the work</h3><p>Carefully, in your home, the way I'd want it done in mine.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="owner" aria-labelledby="own-h">
+  <div class="wrap">
+    <div>
+      <h2 class="sec-h" id="own-h">You deal with me</h2>
+      <p>I'm Casimiro Diaz. Call Casi Construction and you get me, from the estimate to the last screw.</p>
+      <p class="where" style="margin-top:14px">Based in Forked River, NJ. I work around Ocean County.</p>
+    </div>
+    <a class="fb" href="https://www.facebook.com/profile.php?id=100092566353025" rel="noopener">
+      <span class="fb-i"><svg aria-hidden="true"><use href="#i-fb"/></svg></span>
+      Click to see more of my work.
+      <svg class="go" aria-hidden="true"><use href="#i-arrow"/></svg>
+    </a>
+  </div>
+</section>
+
+<section class="band estimate" id="estimate" aria-labelledby="est-h">
+  <div class="wrap">
+    <h2 class="sec-h" id="est-h">No job is to small.</h2>
+    <p class="lede">Tell me what needs fixing and I'll get back to you about a free estimate.</p>
+    <form id="quote" novalidate>
+      <fieldset id="f-jobs">
+        <legend>What needs doing?</legend>
+        <div class="chips">
+          <label class="chip"><input type="checkbox" name="job" value="Carpentry"><span>Carpentry</span></label>
+          <label class="chip"><input type="checkbox" name="job" value="Bathroom"><span>Bathroom</span></label>
+          <label class="chip"><input type="checkbox" name="job" value="Kitchen"><span>Kitchen</span></label>
+          <label class="chip"><input type="checkbox" name="job" value="Flooring / tile"><span>Flooring / tile</span></label>
+          <label class="chip"><input type="checkbox" name="job" value="Windows / doors"><span>Windows / doors</span></label>
+          <label class="chip"><input type="checkbox" name="job" value="Deck / railings"><span>Deck / railings</span></label>
+          <label class="chip"><input type="checkbox" name="job" value="Painting"><span>Painting</span></label>
+          <label class="chip"><input type="checkbox" name="job" value="Stucco"><span>Stucco</span></label>
+          <label class="chip"><input type="checkbox" name="job" value="Repair"><span>Repair</span></label>
+        </div>
+        <p class="err" id="e-jobs">Pick at least one, or describe the job below.</p>
+      </fieldset>
+      <div>
+        <label class="l" for="details">Tell me about it <span class="opt">(optional)</span></label>
+        <textarea id="details" name="details" placeholder="e.g. Back deck railing is loose, about 12 feet."></textarea>
+      </div>
+      <div class="two">
+        <div id="f-town">
+          <label class="l" for="town">Your town</label>
+          <input type="text" id="town" name="town" autocomplete="address-level2" placeholder="e.g. Forked River">
+          <p class="err">Add your town so I know where the job is.</p>
+        </div>
+        <div id="f-name">
+          <label class="l" for="name">Your name</label>
+          <input type="text" id="name" name="name" autocomplete="name">
+          <p class="err">Add your name so I know who's texting.</p>
+        </div>
+      </div>
+      <button class="btn btn-main" type="submit"><svg aria-hidden="true"><use href="#i-text"/></svg>Text this to Casi Construction</button>
+      <p class="how-send">Opens your messages app with this written out. You just press send.</p>
+    </form>
+    <div class="sent" id="sent" role="status" tabindex="-1">
+      <h3>Almost done</h3>
+      <p>Your messages app should be open with this ready to send. If it didn't open, copy it, or call and read it to me.</p>
+      <pre id="sent-msg"></pre>
+      <div class="acts">
+        <button class="btn btn-line" type="button" id="copy">Copy message</button>
+        <a class="btn btn-line" href="tel:+18485257973"><svg aria-hidden="true"><use href="#i-phone"/></svg>848-525-7973</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="deck foot-deck" id="foot-deck" aria-hidden="true"><canvas></canvas></div>
+<footer>
+  <div class="wrap">
+    <svg class="logo-arc" viewBox="0 40 300 160" role="img" aria-label="Casi Construction">
+      <defs><path id="arc" d="M28 132 A160 160 0 0 1 272 132"/></defs>
+      <text font-family="Avenir Next Condensed, Roboto Condensed, Arial Narrow, sans-serif" font-weight="700" font-size="29" letter-spacing="1.2" fill="currentColor"><textPath href="#arc" startOffset="50%" text-anchor="middle">CASI CONSTRUCTION</textPath></text>
+      <g style="--mark-cut:#1f2a31"><use href="#mark" x="104" y="96" width="92" height="92"/></g>
+      <g fill="currentColor"><rect x="36" y="136" width="3.5" height="12" rx="1"/><path d="M39 140.6h50l6 1.4-6 1.4H39z"/><rect x="260.5" y="136" width="3.5" height="12" rx="1"/><path d="M261 140.6h-50l-6 1.4 6 1.4h50z"/></g>
+    </svg>
+    <ul class="contact">
+      <li><a href="tel:+18485257973"><svg aria-hidden="true"><use href="#i-phone"/></svg>848-525-7973</a></li>
+      <li><a href="mailto:casiconstructionllc@gmail.com"><svg aria-hidden="true"><use href="#i-mail"/></svg>casiconstructionllc@gmail.com</a></li>
+      <li><a href="https://www.facebook.com/profile.php?id=100092566353025" rel="noopener"><svg aria-hidden="true"><use href="#i-fb"/></svg>Facebook</a></li>
+    </ul>
+    <p class="fine">Casi Construction, LLC<br>Forked River, NJ · Licensed and insured</p>
+  </div>
+</footer>
+
+<script>
+/* ===== Tunables ===== */
+var BIZ = { phone: '+18485257973', name: 'Casi Construction' };
+var PHONE = window.matchMedia('(max-width: 759px)').matches;
+var REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var SAND = 0.2;            // how much weathering one frame of sanding removes
+var REGROW = 0.0035;       // how fast the gray weathering creeps back (per frame)
+var GHOST_DELAY = 2600;    // ms after the visitor lets go before the sander runs itself again
+var DUST_MAX = PHONE ? 200 : 480;
+var PLANK = PHONE ? 40 : 50;   // board width in CSS px (gap is 4px)
+
+/* ===== Text links: one pre-filled message per service ===== */
+function smsHref(body){ return 'sms:' + BIZ.phone + '?&body=' + encodeURIComponent(body); }
+(function(){
+  var rows = document.querySelectorAll('.row[data-job]');
+  for (var i = 0; i < rows.length; i++) {
+    rows[i].href = smsHref('Hi Casi Construction! I found your website. I\'d like a free estimate for: ' + rows[i].getAttribute('data-job') + '.\nMy town: ');
+  }
+})();
+
+/* ===== Shared pointer (mouse + finger) ===== */
+var P = { x: -9999, y: -9999, active: false, t: 0 };
+(function(){
+  function move(x, y){ P.x = x; P.y = y; P.active = true; P.t = performance.now(); }
+  window.addEventListener('pointermove', function(e){ if (e.pointerType === 'mouse') move(e.clientX, e.clientY); }, { passive: true });
+  window.addEventListener('touchstart', function(e){ var t = e.touches[0]; move(t.clientX, t.clientY); }, { passive: true });
+  window.addEventListener('touchmove', function(e){ var t = e.touches[0]; move(t.clientX, t.clientY); }, { passive: true });
+  window.addEventListener('touchend', function(){ P.active = false; }, { passive: true });
+  document.addEventListener('mouseleave', function(){ P.active = false; });
+})();
+
+/* ===== One loop for everything ===== */
+var Loop = (function(){
+  var items = [], running = false, last = 0;
+  function frame(now){
+    var dt = Math.min(0.05, (now - last) / 1000 || 0.016); last = now;
+    var any = false;
+    for (var i = 0; i < items.length; i++) if (items[i].visible) { items[i].tick(dt, now); any = true; }
+    if (any) requestAnimationFrame(frame); else running = false;
+  }
+  function wake(){ if (!running && !REDUCED) { running = true; last = performance.now(); requestAnimationFrame(frame); } }
+  function add(item, el){
+    item.visible = true; items.push(item);
+    if ('IntersectionObserver' in window) new IntersectionObserver(function(es){ item.visible = es[0].isIntersecting; if (item.visible) wake(); }, { rootMargin: '80px' }).observe(el);
+    wake();
+  }
+  return { add: add };
+})();
+
+/* ===== The deck: weathered boards, a palm sander, sawdust ===== */
+function rng(seed){ return function(){ seed |= 0; seed = seed + 0x6D2B79F5 | 0; var t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+
+// Paints the same boards twice: 'fresh' (sanded wood) and 'old' (silver weathered).
+// Both layers consume the random stream identically so the grain lines up when sanded through.
+function paintBoards(c, W, H, D, seed, kind){
+  var R = rng(seed), old = kind === 'old', GAP = 4, step = PLANK + GAP;
+  c.setTransform(D, 0, 0, D, 0, 0);
+  c.fillStyle = '#211c18'; c.fillRect(0, 0, W, H);
+  var joist = 16 * 9.4, jx0 = R() * joist;           // screws sit over joists, 16" on center
+  var rows = Math.ceil(H / step) + 1, y0 = -R() * PLANK * .5;
+  for (var r = 0; r < rows; r++) {
+    var y = y0 + r * step, x = -R() * 420;
+    while (x < W) {
+      var len = 300 + R() * 520, x1 = x + len;
+      var h1 = R(), l1 = R(), s1 = R();
+      var hue = old ? 34 + h1 * 12 : 31 + h1 * 7, sat = old ? 4 + s1 * 6 : 38 + s1 * 12, lit = old ? 53 + l1 * 10 : 64 + l1 * 8;
+      c.save(); c.beginPath(); c.rect(x + 1, y, len - 2, PLANK); c.clip();
+      c.fillStyle = 'hsl(' + hue + ',' + sat + '%,' + lit + '%)'; c.fillRect(x, y, len, PLANK);
+      // knot
+      var hasKnot = R() < .4, kx = x + 40 + R() * (len - 80), ky = y + 8 + R() * (PLANK - 16), kr = 3 + R() * 5;
+      // grain
+      var lines = Math.round(PLANK * .9);
+      for (var g = 0; g < lines; g++) {
+        var gy = y + R() * PLANK, amp = .4 + R() * 2.2, fq = .002 + R() * .006, ph = R() * 6.283, a = .05 + R() * .13, w = .4 + R() * 1.3, dark = R();
+        c.beginPath();
+        for (var gx = x; gx <= x1 + 12; gx += 10) {
+          var yy = gy + amp * Math.sin(gx * fq + ph) + 1.3 * Math.sin(gx * fq * 3.1 + ph * 2);
+          if (hasKnot) { var d = yy - ky, f = Math.exp(-(gx - kx) * (gx - kx) / (kr * kr * 14)); yy += (d < 0 ? -1 : 1) * kr * 1.8 * f * Math.exp(-d * d / (kr * kr * 8)); }
+          if (gx === x) c.moveTo(gx, yy); else c.lineTo(gx, yy);
+        }
+        c.lineWidth = w;
+        c.strokeStyle = old ? 'hsla(30,7%,' + (24 + dark * 10) + '%,' + (a * 1.5) + ')' : 'hsla(26,50%,' + (30 + dark * 14) + '%,' + (a * 1.7) + ')';
+        c.stroke();
+      }
+      if (hasKnot) {
+        for (var k = 3; k >= 0; k--) {
+          c.beginPath(); c.ellipse(kx, ky, kr * (1 + k * .55) * 1.6, kr * (1 + k * .55) * .8, 0, 0, 6.283);
+          c.strokeStyle = old ? 'rgba(45,40,36,' + (.25 - k * .04) + ')' : 'rgba(110,55,18,' + (.3 - k * .05) + ')'; c.lineWidth = 1; c.stroke();
+        }
+        c.beginPath(); c.ellipse(kx, ky, kr * 1.4, kr * .7, 0, 0, 6.283); c.fillStyle = old ? 'rgba(40,36,32,.55)' : 'rgba(96,46,14,.6)'; c.fill();
+      }
+      // weather checks (cracks along the grain) and grime, only on old boards; still consume randoms on fresh
+      var checks = Math.floor(R() * 3);
+      for (var q = 0; q < checks; q++) {
+        var cx = x + R() * len, cy = y + 6 + R() * (PLANK - 12), cl = 30 + R() * 120;
+        if (old) { c.beginPath(); c.moveTo(cx, cy); c.quadraticCurveTo(cx + cl * .5, cy + (R() - .5) * 3, cx + cl, cy + (R() - .5) * 2); c.strokeStyle = 'rgba(30,26,22,.5)'; c.lineWidth = .9; c.stroke(); } else { R(); R(); }
+      }
+      if (old) {
+        for (var s = 0; s < len * PLANK / 90; s++) { c.fillStyle = 'rgba(' + (R() < .3 ? '70,78,60' : '40,36,32') + ',' + (.05 + R() * .1) + ')'; c.fillRect(x + R() * len, y + R() * PLANK, 1 + R() * 2.5, 1 + R() * 1.5); }
+      }
+      // board roundness: lighter top edge, darker bottom edge
+      var gr = c.createLinearGradient(0, y, 0, y + PLANK);
+      gr.addColorStop(0, 'rgba(255,250,240,.10)'); gr.addColorStop(.15, 'rgba(255,250,240,0)'); gr.addColorStop(.8, 'rgba(0,0,0,0)'); gr.addColorStop(1, 'rgba(20,12,6,.22)');
+      c.fillStyle = gr; c.fillRect(x, y, len, PLANK);
+      // screw pairs over each joist
+      for (var jx = jx0; jx < W + joist; jx += joist) {
+        if (jx < x + 10 || jx > x1 - 10) continue;
+        for (var e = 0; e < 2; e++) {
+          var sy = y + (e ? PLANK * .76 : PLANK * .24);
+          c.beginPath(); c.arc(jx, sy, 2.4, 0, 6.283); c.fillStyle = old ? '#4a3a2c' : '#5d6266'; c.fill();
+          c.beginPath(); c.arc(jx - .6, sy - .6, 1, 0, 6.283); c.fillStyle = old ? 'rgba(150,110,70,.5)' : 'rgba(220,225,228,.8)'; c.fill();
+        }
+      }
+      c.restore();
+      // butt joint shadow
+      c.fillStyle = 'rgba(25,20,16,.85)'; c.fillRect(x1 - 1, y, 2, PLANK);
+      x = x1;
+    }
+  }
+}
+
+function Deck(wrap, opt){
+  var cv = wrap.querySelector('canvas'), ctx = cv.getContext('2d');
+  var mk = function(){ return document.createElement('canvas'); };
+  var fresh = mk(), old = mk(), tmp = mk(), mask = mk();
+  var fx = fresh.getContext('2d'), ox = old.getContext('2d'), tx = tmp.getContext('2d'), mx = mask.getContext('2d');
+  var W = 0, H = 0, D = 1, MS = .5, dust = [], lastUser = -1e9;
+  var tool = { x: 0, y: 0, px: 0, py: 0, vx: 0, vy: 0, a: 0 };
+  var PW = PHONE ? 60 : 74, PH = PHONE ? 38 : 46;      // sander pad size
+
+  function resize(){
+    var r = wrap.getBoundingClientRect(), w = Math.round(r.width), h = Math.round(r.height);
+    if (w === W && h === H || !w || !h) return;      // phones fire resize when the address bar moves: ignore same size
+    W = w; H = h; D = Math.min(window.devicePixelRatio || 1, 1.5);
+    [cv, fresh, old, tmp].forEach(function(c){ c.width = Math.round(W * D); c.height = Math.round(H * D); });
+    mask.width = Math.ceil(W * D * MS); mask.height = Math.ceil(H * D * MS);
+    paintBoards(fx, W, H, D, opt.seed, 'fresh');
+    paintBoards(ox, W, H, D, opt.seed, 'old');
+    mx.setTransform(1, 0, 0, 1, 0, 0); mx.globalCompositeOperation = 'source-over'; mx.globalAlpha = 1;
+    mx.fillStyle = '#fff'; mx.fillRect(0, 0, mask.width, mask.height);
+    // start with a pass already sanded so the first frame shows both woods
+    var p = ghost(performance.now() / 1000 - 3);
+    for (var i = 0; i < 90; i++) { var q = ghost(performance.now() / 1000 - 3 + i * .033); sand(p.x, p.y, q.x, q.y, .5); p = q; }
+    tool.x = tool.px = p.x; tool.y = tool.py = p.y;
+    draw();
+  }
+
+  function ghost(t){
+    // long strokes along the grain, drifting slowly across the boards
+    return { x: W * (.5 + .36 * Math.sin(t * 1.25) + .06 * Math.sin(t * .37)), y: H * (.5 + .3 * Math.sin(t * .29 + 1) + .05 * Math.sin(t * 2.1)) };
+  }
+
+  function sand(x0, y0, x1, y1, a){
+    var n = Math.max(1, Math.ceil(Math.hypot(x1 - x0, y1 - y0) / 10));
+    mx.save(); mx.globalCompositeOperation = 'destination-out';
+    for (var i = 1; i <= n; i++) {
+      var x = x0 + (x1 - x0) * i / n, y = y0 + (y1 - y0) * i / n;
+      mx.setTransform(D * MS, 0, 0, D * MS * .62, x * D * MS, y * D * MS);
+      var g = mx.createRadialGradient(0, 0, 0, 0, 0, PW * .62);
+      g.addColorStop(0, 'rgba(0,0,0,' + a + ')'); g.addColorStop(.78, 'rgba(0,0,0,' + a * .9 + ')'); g.addColorStop(1, 'rgba(0,0,0,0)');
+      mx.fillStyle = g; mx.beginPath(); mx.arc(0, 0, PW * .62, 0, 6.283); mx.fill();
+    }
+    mx.restore();
+  }
+
+  function spawn(n){
+    for (var i = 0; i < n && dust.length < DUST_MAX; i++) {
+      var ang = Math.random() * 6.283, sp = 40 + Math.random() * 140, l = Math.random();
+      dust.push({ x: tool.x + Math.cos(ang) * PW * .5, y: tool.y + Math.sin(ang) * PH * .5, vx: Math.cos(ang) * sp + tool.vx * .25, vy: Math.sin(ang) * sp + tool.vy * .25,
+        life: 0, max: 2.2 + Math.random() * 2.6, s: .8 + Math.random() * 1.6, c: l < .5 ? '232,200,150' : l < .85 ? '214,170,110' : '245,228,196' });
+    }
+  }
+
+  function drawTool(c, t){
+    var j = Math.sin(t * 90) * .7, k = Math.cos(t * 77) * .7;   // orbital buzz
+    c.save(); c.translate(tool.x + j, tool.y + k); c.rotate(tool.a);
+    c.shadowColor = 'rgba(20,12,6,.38)'; c.shadowBlur = 14; c.shadowOffsetX = 5; c.shadowOffsetY = 8;
+    c.fillStyle = '#c9b48b'; rr(c, -PW / 2 - 2, -PH / 2 - 2, PW + 4, PH + 4, 8); c.fill();   // sandpaper edge
+    c.shadowColor = 'transparent';
+    c.fillStyle = '#2b3136'; rr(c, -PW / 2, -PH / 2, PW, PH, 7); c.fill();                  // pad
+    c.fillStyle = '#3d454c'; rr(c, -PW / 2 + 5, -PH / 2 + 4, PW - 10, PH - 8, 9); c.fill();  // body
+    c.fillStyle = '#6b7278'; c.fillRect(-PW / 2 - 3, -5, 4, 10); c.fillRect(PW / 2 - 1, -5, 4, 10); // paper clamps
+    var g = c.createRadialGradient(-4, -5, 2, 0, 0, PH * .42);
+    g.addColorStop(0, '#d4573a'); g.addColorStop(1, '#8a2a16');
+    c.fillStyle = g; c.beginPath(); c.ellipse(0, 0, PW * .26, PH * .36, 0, 0, 6.283); c.fill();  // palm grip
+    c.restore();
+  }
+  function rr(c, x, y, w, h, r){ c.beginPath(); c.moveTo(x + r, y); c.arcTo(x + w, y, x + w, y + h, r); c.arcTo(x + w, y + h, x, y + h, r); c.arcTo(x, y + h, x, y, r); c.arcTo(x, y, x + w, y, r); c.closePath(); }
+
+  function draw(t){
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.drawImage(fresh, 0, 0);
+    tx.globalCompositeOperation = 'copy'; tx.drawImage(old, 0, 0);
+    tx.globalCompositeOperation = 'destination-in'; tx.imageSmoothingEnabled = true; tx.drawImage(mask, 0, 0, tmp.width, tmp.height);
+    tx.globalCompositeOperation = 'source-over';
+    ctx.drawImage(tmp, 0, 0);
+    ctx.setTransform(D, 0, 0, D, 0, 0);
+    for (var i = 0; i < dust.length; i++) { var p = dust[i]; ctx.fillStyle = 'rgba(' + p.c + ',' + (.9 * (1 - p.life / p.max)) + ')'; ctx.fillRect(p.x, p.y, p.s, p.s); }
+    if (!REDUCED || t) drawTool(ctx, (t || 0) / 1000);
+  }
+
+  function tick(dt, now){
+    resize();
+    var r = cv.getBoundingClientRect();                 // read every frame: the page scrolls under the finger
+    var lx = P.x - r.left, ly = P.y - r.top, user = P.active && lx > -20 && lx < W + 20 && ly > -20 && ly < H + 20;
+    var tgx, tgy, ease, on = true;
+    if (user) { lastUser = now; tgx = lx; tgy = ly; ease = .35; }
+    else if (now - lastUser > GHOST_DELAY) { var g = ghost(now / 1000); tgx = g.x; tgy = g.y; ease = .05; }
+    else { tgx = tool.x; tgy = tool.y; ease = 0; on = false; }
+    tgx = Math.max(PW * .3, Math.min(W - PW * .3, tgx)); tgy = Math.max(PH * .3, Math.min(H - PH * .3, tgy));
+    tool.px = tool.x; tool.py = tool.y;
+    tool.x += (tgx - tool.x) * ease; tool.y += (tgy - tool.y) * ease;
+    tool.vx = (tool.x - tool.px) / dt; tool.vy = (tool.y - tool.py) / dt;
+    tool.a += ((Math.max(-.25, Math.min(.25, tool.vy * .0006))) - tool.a) * .1;
+    var speed = Math.hypot(tool.vx, tool.vy);
+    if (on) { sand(tool.px, tool.py, tool.x, tool.y, SAND); spawn(Math.round((1 + Math.min(speed, 900) / 160) * (PHONE ? .7 : 1.2))); }
+    // weathering creeps back
+    mx.setTransform(1, 0, 0, 1, 0, 0); mx.globalAlpha = REGROW; mx.fillStyle = '#fff'; mx.fillRect(0, 0, mask.width, mask.height); mx.globalAlpha = 1;
+    // sawdust skids, slows, gets shoved by the sander, fades
+    for (var i = dust.length - 1; i >= 0; i--) {
+      var p = dust[i], dx = p.x - tool.x, dy = p.y - tool.y, d2 = dx * dx + dy * dy;
+      if (d2 < 3600 && d2 > 1) { var d = Math.sqrt(d2), f = (60 - d) * 9; p.vx += dx / d * f * dt; p.vy += dy / d * f * dt; }
+      var fr = Math.exp(-3.2 * dt); p.vx *= fr; p.vy *= fr;
+      p.x += p.vx * dt; p.y += p.vy * dt; p.life += dt;
+      if (p.life > p.max) dust.splice(i, 1);
+    }
+    draw(now);
+  }
+
+  resize();
+  window.addEventListener('resize', function(){ if (REDUCED) resize(); }, { passive: true });
+  return { tick: tick, mask: mask, tool: tool, get size(){ return [W, H, cv.width]; } };
+}
+
+window.__decks = [];
+(function(){
+  [['hero-deck', 20261017], ['foot-deck', 848525]].forEach(function(d){
+    var el = document.getElementById(d[0]);
+    var deck = Deck(el, { seed: d[1] });
+    window.__decks.push(deck);
+    Loop.add(deck, el);
+  });
+})();
+
+/* ===== Estimate form: composes a text message ===== */
+(function(){
+  var form = document.getElementById('quote'), sent = document.getElementById('sent'), out = document.getElementById('sent-msg');
+  function val(id){ return document.getElementById(id).value.trim(); }
+  function mark(id, bad){ document.getElementById(id).classList.toggle('bad', bad); }
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var jobs = [].map.call(form.querySelectorAll('input[name=job]:checked'), function(i){ return i.value; });
+    var details = val('details'), town = val('town'), name = val('name');
+    mark('f-jobs', !jobs.length && !details); mark('f-town', !town); mark('f-name', !name);
+    var first = form.querySelector('.bad input, .bad textarea');
+    if (first) { (first.type === 'checkbox' ? first : first).focus(); return; }
+    var msg = 'Hi Casi Construction! I\'d like a free estimate.\n'
+      + (jobs.length ? 'Work: ' + jobs.join(', ') + '\n' : '')
+      + (details ? 'Details: ' + details + '\n' : '')
+      + 'Town: ' + town + '\nName: ' + name;
+    out.textContent = msg;
+    sent.classList.add('on');
+    sent.focus({ preventScroll: true });
+    sent.scrollIntoView({ behavior: REDUCED ? 'auto' : 'smooth', block: 'nearest' });
+    window.location.href = smsHref(msg);
+  });
+  form.addEventListener('input', function(e){ var b = e.target.closest('.bad'); if (b) b.classList.remove('bad'); });
+  form.addEventListener('change', function(e){ if (e.target.name === 'job') mark('f-jobs', false); });
+  document.getElementById('copy').addEventListener('click', function(){
+    var b = this;
+    try { navigator.clipboard.writeText(out.textContent).then(function(){ b.textContent = 'Copied'; }, function(){ b.textContent = 'Select the text above to copy'; }); }
+    catch (err) { b.textContent = 'Select the text above to copy'; }
+  });
+})();
+</script>
+</body>
+</html>
