@@ -10,11 +10,11 @@
 <meta property="og:title" content="Casi Construction LLC · Forked River, NJ">
 <meta property="og:description" content="Carpentry, bathrooms, kitchens, floors, decks and stucco. Licensed and insured. Free estimates. No job is to small.">
 <meta property="og:url" content="https://10elizabethbell.github.io/casiConstruction/">
-<meta property="og:image" content="https://10elizabethbell.github.io/casiConstruction/og.png">
+<meta property="og:image" content="https://10elizabethbell.github.io/casiConstruction/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3CclipPath id='c'%3E%3Ccircle cx='60' cy='60' r='58'/%3E%3C/clipPath%3E%3Ccircle cx='60' cy='60' r='58' fill='%231f2a31'/%3E%3Cg clip-path='url(%23c)' fill='%23f4f0e8'%3E%3Cpath d='M52 48h16l2 68H50z'/%3E%3Cpath d='M18 30q0-3 3-3h13q3 0 3 3v3h12v-6h20c15 0 27 9 34 27 1 3-2 5-4 2-8-11-17-14-30-13v6H49v-5H37v3q0 3-3 3H21q-3 0-3-3z'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3CclipPath id='c'%3E%3Ccircle cx='60' cy='60' r='58'/%3E%3C/clipPath%3E%3Ccircle cx='60' cy='60' r='58' fill='%231f2a31'/%3E%3Cg clip-path='url(%23c)' fill='%23f4f0e8'%3E%3Cpath d='M53 48h14l1.5 50a8.5 8.5 0 0 1-17 0z'/%3E%3Cpath d='M21 25h15a2 2 0 0 1 2 2v20a2 2 0 0 1-2 2H21a2 2 0 0 1-2-2V27a2 2 0 0 1 2-2z'/%3E%3Cpath d='M38 30h12v-3h20c16 0 28 9 35 26 1 3-2 4-4 2-7-9-15-13-27-13h-2v6l-6 2H50v-4H38z'/%3E%3C/g%3E%3C/svg%3E">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <style>
 /* ===== Tokens ===== */
@@ -25,6 +25,7 @@
   --ink-2:#47535c;      /* secondary text */
   --rule:#d6ccba;       /* pencil rule */
   --field:#fffdf8;
+  --edge:#8a806e;       /* form control edges, 3:1+ */
   --red:#b23a22;        /* carpenter's pencil: hover/focus accent only */
   --wood:#9a5a22;       /* fresh wood, large numerals */
   --gutter:16px;
@@ -52,34 +53,32 @@ svg{display:block}
 .mark small{font-size:11.5px;font-weight:700;letter-spacing:.16em}
 .bar-call{display:flex;align-items:center;gap:7px;min-height:44px;padding:0 2px;font-weight:700;font-size:17px;text-decoration:none;white-space:nowrap;font-variant-numeric:tabular-nums}
 .bar-call svg{width:18px;height:18px}
-.bar-call:hover{color:var(--red)}
+@media (hover:hover){.bar-call:hover{color:var(--red)}}
 
 /* ===== Hero ===== */
-.hero{display:grid}
-.hero-text{padding:20px var(--gutter) 0}
-.hero h1{font-size:clamp(2.75rem,13.2vw,5.6rem)}
+.hero{display:grid;grid-template-columns:minmax(0,1fr)}
+.hero-text{padding:20px var(--gutter) 0;min-width:0}
+.hero h1{font-size:clamp(2.75rem,min(13.2vw,15svh),5.6rem)}
 .promise{margin-top:16px;font-size:clamp(17px,4.6vw,20px);max-width:32ch}
-.creds{margin-top:12px;font-size:15px;color:var(--ink-2);font-weight:600}
-.creds span{white-space:nowrap}
-.creds i{font-style:normal;padding:0 .15em;color:#8a806e}
 .cta{display:grid;gap:12px;margin-top:22px}
 .btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 22px;border-radius:10px;border:2px solid var(--ink);font:700 18px/1 var(--body);text-decoration:none;cursor:pointer;transition:background-color .2s,color .2s,border-color .2s}
 .btn-main{background:var(--ink);color:var(--paper)}
-.btn-main:hover{background:var(--red);border-color:var(--red)}
+@media (hover:hover){.btn-main:hover{background:var(--red);border-color:var(--red)}}
 .btn-line{background:transparent;color:var(--ink)}
-.btn-line:hover{border-color:var(--red);color:var(--red)}
+@media (hover:hover){.btn-line:hover{border-color:var(--red);color:var(--red)}}
 .btn svg{width:20px;height:20px;flex:none}
 
 /* The deck: weathered boards sanded back to fresh wood */
 .deck{position:relative;height:clamp(220px,34vh,330px);height:clamp(220px,34svh,330px);margin-top:26px;touch-action:pan-y;user-select:none;-webkit-user-select:none;overflow:hidden;
   background:repeating-linear-gradient(180deg,#8c867c 0 44px,#221d19 44px 48px)}
+#hero-deck{touch-action:none;overscroll-behavior:contain}
 .deck canvas{position:absolute;inset:0;width:100%;height:100%}
 @media (min-width:900px){
   .hero{grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);min-height:min(calc(100svh - 68px),820px)}
   .hero-text{align-self:center;padding:40px 48px 64px max(var(--gutter),calc((100vw - 1240px)/2 + var(--gutter)))}
   .hero h1{font-size:clamp(3.6rem,6.2vw,6rem)}
   .cta{grid-template-columns:auto auto;justify-content:start}
-  .deck{height:auto;margin:0;border-radius:18px 0 0 18px}
+  .hero .deck{height:auto;margin:0;border-radius:18px 0 0 18px}
 }
 
 /* ===== Sections ===== */
@@ -93,13 +92,13 @@ section{padding:64px 0}
 .row:hover,.row:focus-visible{outline:none;background:none;box-shadow:none}
 .arrow{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;border:1.5px solid var(--ink-2);color:var(--ink);flex:none;transition:background-color .2s,border-color .2s,color .2s}
 .arrow svg{width:18px;height:18px}
-.row:hover .arrow,.row:focus-visible .arrow{background:var(--red);border-color:var(--red);color:var(--paper)}
+.row:focus-visible .arrow{background:var(--red);border-color:var(--red);color:var(--paper)}
+@media (hover:hover){.row:hover .arrow{background:var(--red);border-color:var(--red);color:var(--paper)}}
 .row:focus-visible .arrow{outline:3px solid var(--red);outline-offset:3px}
 .rows-note{margin-top:16px;color:var(--ink-2);font-size:16px}
 @media (min-width:900px){
-  .services .wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.6fr);gap:48px}
-  .rows{display:grid;grid-template-columns:1fr 1fr;column-gap:40px;border-top:0}
-  .rows li:nth-child(-n+2){border-top:1px solid var(--rule)}
+  .rows{display:grid;grid-template-columns:repeat(3,1fr);column-gap:40px;border-top:0}
+  .rows li:nth-child(-n+3){border-top:1px solid var(--rule)}
 }
 
 /* How a job goes */
@@ -114,15 +113,14 @@ section{padding:64px 0}
 .owner .wrap{display:grid;gap:22px}
 .owner p{font-size:clamp(18px,4.8vw,22px);max-width:38ch}
 .owner .where{font-size:17px;color:var(--ink-2)}
-.fb{display:flex;align-items:center;gap:14px;min-height:64px;padding:12px 18px;border:2px solid var(--ink);border-radius:12px;background:var(--paper);text-decoration:none;font-weight:750;font-size:19px;max-width:440px;transition:border-color .2s,color .2s}
+.fb{display:flex;align-items:center;gap:14px;min-height:64px;padding:12px 18px;border:2px solid var(--ink);border-radius:12px;background:var(--paper);text-decoration:none;font-weight:750;font-size:18px;max-width:440px;transition:border-color .2s,color .2s}
 .fb .fb-i{width:36px;height:36px;border-radius:50%;background:#1877f2;color:#fff;display:grid;place-items:center;flex:none}
 .fb .fb-i svg{width:20px;height:20px}
 .fb .go{margin-left:auto;width:20px;height:20px}
-.fb:hover{border-color:var(--red);color:var(--red)}
-@media (min-width:900px){.owner .wrap{grid-template-columns:1.4fr 1fr;align-items:end;column-gap:64px}}
+@media (hover:hover){.fb:hover{border-color:var(--red);color:var(--red)}}
 
 /* Estimate form */
-.estimate .lede{font-size:18px;max-width:40ch;margin:-8px 0 26px}
+@media (min-width:900px){.estimate .wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.6fr);gap:48px;align-items:start}#sent{grid-column:2}}
 form{display:grid;gap:22px;max-width:640px}
 fieldset{border:0;margin:0;padding:0;min-width:0}
 legend,label.l{display:block;font-weight:700;font-size:17px;margin-bottom:10px;padding:0}
@@ -130,41 +128,46 @@ legend,label.l{display:block;font-weight:700;font-size:17px;margin-bottom:10px;p
 .chips{display:flex;flex-wrap:wrap;gap:10px}
 .chip{position:relative}
 .chip input{position:absolute;opacity:0;width:1px;height:1px}
-.chip span{display:flex;align-items:center;gap:8px;min-height:46px;padding:0 16px;border:2px solid #c9bfae;border-radius:10px;background:var(--field);font-weight:600;font-size:16px;cursor:pointer;transition:border-color .15s,background-color .15s,color .15s}
+.chip span{display:flex;align-items:center;gap:8px;min-height:46px;padding:0 16px;border:2px solid var(--edge);border-radius:10px;background:var(--field);font-weight:600;font-size:16px;cursor:pointer;transition:border-color .15s,background-color .15s,color .15s}
 .chip span::before{content:"";width:16px;height:16px;border-radius:4px;border:2px solid var(--ink-2);flex:none;background:center/12px no-repeat}
 .chip input:checked + span{background:var(--ink);border-color:var(--ink);color:var(--paper)}
 .chip input:checked + span::before{border-color:var(--paper);background-color:var(--paper);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M2.5 8.6 6.2 12 13.6 3.6' fill='none' stroke='%231f2a31' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")}
-.chip:hover span,.chip input:focus-visible + span{outline:2px solid var(--red);outline-offset:2px}
-input[type=text],textarea{width:100%;font:500 17px/1.4 var(--body);color:var(--ink);background:var(--field);border:2px solid #c9bfae;border-radius:10px;padding:13px 14px;min-height:52px;caret-color:var(--red)}
+.chip input:focus-visible + span{outline:2px solid var(--red);outline-offset:2px}
+@media (hover:hover){.chip:hover span{outline:2px solid var(--red);outline-offset:2px}}
+input[type=text],textarea{width:100%;font:500 17px/1.4 var(--body);color:var(--ink);background:var(--field);border:2px solid var(--edge);border-radius:10px;padding:13px 14px;min-height:52px;caret-color:var(--red)}
 textarea{min-height:110px;resize:vertical}
-input[type=text]:hover,textarea:hover,input[type=text]:focus,textarea:focus{outline:2px solid var(--red);outline-offset:1px}
+input[type=text]:focus,textarea:focus{outline:2px solid var(--red);outline-offset:1px}
+@media (hover:hover){input[type=text]:hover,textarea:hover{outline:2px solid var(--red);outline-offset:1px}}
 ::placeholder{color:#6d6658}
 .two{display:grid;gap:22px}
 @media (min-width:700px){.two{grid-template-columns:1fr 1fr}}
-.err{display:none;margin-top:8px;color:var(--red);font-weight:650;font-size:15.5px}
+.err{display:none;margin-top:8px;color:var(--red);font-weight:650;font-size:16px}
 .bad .err{display:block}
 .bad input[type=text]{border-color:var(--red)}
 form .btn{width:100%}
-form .btn:hover,form .btn:focus-visible{outline:2px solid var(--red);outline-offset:3px}
-.how-send{font-size:15.5px;color:var(--ink-2);margin-top:-10px}
+form .btn:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+@media (hover:hover){form .btn:hover{outline:2px solid var(--red);outline-offset:3px}}
+.how-send{font-size:16px;color:var(--ink-2);margin-top:-10px}
 @media (min-width:700px){form .btn{width:auto;justify-self:start}}
 .sent{display:none;max-width:640px;margin-top:26px;padding:20px;border:2px solid var(--ink);border-radius:12px;background:var(--field)}
 .sent.on{display:block}
 .sent h3{font-size:28px;margin-bottom:8px}
-.sent pre{white-space:pre-wrap;font:500 15.5px/1.5 var(--body);background:var(--paper);border-radius:8px;padding:12px 14px;margin:14px 0}
+.sent pre{white-space:pre-wrap;overflow-wrap:anywhere;font:500 15.5px/1.5 var(--body);background:var(--paper);border-radius:8px;padding:12px 14px;margin:14px 0}
 .sent .acts{display:grid;gap:10px}
 @media (min-width:700px){.sent .acts{grid-template-columns:auto auto;justify-content:start}}
 
 /* ===== Footer ===== */
+.plank{height:40px;margin:0;background:#8c867c}
+@media (min-width:760px){.plank{height:50px}}
 .foot-deck{height:150px;margin:0;background:repeating-linear-gradient(180deg,#8c867c 0 40px,#221d19 40px 44px)}
 footer{background:var(--ink);color:var(--paper);padding:44px 0 calc(40px + env(safe-area-inset-bottom))}
 footer .wrap{display:grid;gap:26px}
 .logo-arc{width:min(280px,78vw);height:auto;color:var(--paper)}
 .contact{list-style:none;margin:0;padding:0;display:grid;gap:4px;font-size:18px}
 .contact a{display:inline-flex;align-items:center;gap:10px;min-height:44px;text-decoration:none;font-weight:650}
-.contact a:hover{color:#ffb39f}
+@media (hover:hover){.contact a:hover{color:#ffb39f}}
 .contact svg{width:20px;height:20px;flex:none;opacity:.8}
-.fine{font-size:15px;color:#bcc5cb}
+.fine{font-size:16px;color:#bcc5cb}
 @media (min-width:900px){footer .wrap{grid-template-columns:auto 1fr auto;align-items:center;column-gap:64px}}
 
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
@@ -183,8 +186,9 @@ FORM: Weathered deck being sanded, #1 of six trade worlds (deck sanding, bluepri
   <symbol id="mark" viewBox="0 0 120 120">
     <circle cx="60" cy="60" r="58" fill="currentColor"/>
     <g clip-path="url(#mark-clip)" fill="var(--mark-cut,#f4f0e8)">
-      <path d="M52 48h16l2 68H50z"/>
-      <path d="M18 30q0-3 3-3h13q3 0 3 3v3h12v-6h20c15 0 27 9 34 27 1 3-2 5-4 2-8-11-17-14-30-13v6H49v-5H37v3q0 3-3 3H21q-3 0-3-3z"/>
+      <path d="M53 48h14l1.5 50a8.5 8.5 0 0 1-17 0z"/>
+      <path d="M21 25h15a2 2 0 0 1 2 2v20a2 2 0 0 1-2 2H21a2 2 0 0 1-2-2V27a2 2 0 0 1 2-2z"/>
+      <path d="M38 30h12v-3h20c16 0 28 9 35 26 1 3-2 4-4 2-7-9-15-13-27-13h-2v6l-6 2H50v-4H38z"/>
     </g>
   </symbol>
   <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></symbol>
@@ -207,8 +211,7 @@ FORM: Weathered deck being sanded, #1 of six trade worlds (deck sanding, bluepri
   <div class="hero-text">
     <h1 id="hero-h">I build it like it's mine.</h1>
     <p class="promise">From one sticking door to a whole new bathroom, I treat your house the way I'd want someone to treat mine.</p>
-    <p class="creds"><span>Licensed and insured</span> <i>·</i> <span>Free estimates</span> <i>·</i> <span>Forked River, NJ</span></p>
-    <div class="cta">
+        <div class="cta">
       <a class="btn btn-main" href="#estimate">Get a free estimate</a>
       <a class="btn btn-line" href="#services">What I do</a>
     </div>
@@ -233,11 +236,12 @@ FORM: Weathered deck being sanded, #1 of six trade worlds (deck sanding, bluepri
         <li><a class="row" data-job="Stucco">Stucco<span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
         <li><a class="row" data-job="A repair">Repairs<span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
       </ul>
-      <p class="rows-note">Tap one to text me about it.</p>
+      <p class="rows-note" id="rows-note">Tap one to text me about it.</p>
     </div>
   </div>
 </section>
 
+<div class="deck plank" id="plank-1" aria-hidden="true"><canvas></canvas></div>
 <section class="band how" aria-labelledby="how-h">
   <div class="wrap">
     <h2 class="sec-h" id="how-h">How a job goes</h2>
@@ -254,22 +258,22 @@ FORM: Weathered deck being sanded, #1 of six trade worlds (deck sanding, bluepri
     <div>
       <h2 class="sec-h" id="own-h">You deal with me</h2>
       <p>I'm Casimiro Diaz. Call Casi Construction and you get me, from the estimate to the last screw.</p>
-      <p class="where" style="margin-top:14px">Based in Forked River, NJ. I work around Ocean County.</p>
+      <p class="where" style="margin-top:14px">Based in Forked River, NJ. Licensed and insured. Estimates are free.</p>
     </div>
     <a class="fb" href="https://www.facebook.com/profile.php?id=100092566353025" rel="noopener">
       <span class="fb-i"><svg aria-hidden="true"><use href="#i-fb"/></svg></span>
-      Click to see more of my work.
+      Find me on Facebook.
       <svg class="go" aria-hidden="true"><use href="#i-arrow"/></svg>
     </a>
   </div>
 </section>
 
+<div class="deck plank" id="plank-2" aria-hidden="true"><canvas></canvas></div>
 <section class="band estimate" id="estimate" aria-labelledby="est-h">
   <div class="wrap">
     <h2 class="sec-h" id="est-h">No job is to small.</h2>
-    <p class="lede">Tell me what needs fixing and I'll get back to you about a free estimate.</p>
     <form id="quote" novalidate>
-      <fieldset id="f-jobs">
+      <fieldset id="f-jobs" aria-describedby="e-jobs">
         <legend>What needs doing?</legend>
         <div class="chips">
           <label class="chip"><input type="checkbox" name="job" value="Carpentry"><span>Carpentry</span></label>
@@ -282,22 +286,22 @@ FORM: Weathered deck being sanded, #1 of six trade worlds (deck sanding, bluepri
           <label class="chip"><input type="checkbox" name="job" value="Stucco"><span>Stucco</span></label>
           <label class="chip"><input type="checkbox" name="job" value="Repair"><span>Repair</span></label>
         </div>
-        <p class="err" id="e-jobs">Pick at least one, or describe the job below.</p>
+        <p class="err" id="e-jobs" role="alert">Pick at least one, or describe the job below.</p>
       </fieldset>
       <div>
         <label class="l" for="details">Tell me about it <span class="opt">(optional)</span></label>
-        <textarea id="details" name="details" placeholder="e.g. Back deck railing is loose, about 12 feet."></textarea>
+        <textarea id="details" name="details" maxlength="600" placeholder="e.g. Back deck railing is loose, about 12 feet."></textarea>
       </div>
       <div class="two">
         <div id="f-town">
           <label class="l" for="town">Your town</label>
-          <input type="text" id="town" name="town" autocomplete="address-level2" placeholder="e.g. Forked River">
-          <p class="err">Add your town so I know where the job is.</p>
+          <input type="text" id="town" name="town" maxlength="60" aria-describedby="e-town" autocomplete="address-level2" placeholder="e.g. Forked River">
+          <p class="err" id="e-town" role="alert">Add your town so I know where the job is.</p>
         </div>
         <div id="f-name">
           <label class="l" for="name">Your name</label>
-          <input type="text" id="name" name="name" autocomplete="name">
-          <p class="err">Add your name so I know who's texting.</p>
+          <input type="text" id="name" name="name" maxlength="60" aria-describedby="e-name" autocomplete="name">
+          <p class="err" id="e-name" role="alert">Add your name so I know who's texting.</p>
         </div>
       </div>
       <button class="btn btn-main" type="submit"><svg aria-hidden="true"><use href="#i-text"/></svg>Text this to Casi Construction</button>
@@ -321,9 +325,9 @@ FORM: Weathered deck being sanded, #1 of six trade worlds (deck sanding, bluepri
   <div class="wrap">
     <svg class="logo-arc" viewBox="0 40 300 160" role="img" aria-label="Casi Construction">
       <defs><path id="arc" d="M28 132 A160 160 0 0 1 272 132"/></defs>
-      <text font-family="Avenir Next Condensed, Roboto Condensed, Arial Narrow, sans-serif" font-weight="700" font-size="29" letter-spacing="1.2" fill="currentColor"><textPath href="#arc" startOffset="50%" text-anchor="middle">CASI CONSTRUCTION</textPath></text>
+      <text style="font-family:var(--display);font-stretch:condensed" font-weight="700" font-size="29" letter-spacing="1.2" fill="currentColor"><textPath href="#arc" startOffset="50%" text-anchor="middle">CASI CONSTRUCTION</textPath></text>
       <g style="--mark-cut:#1f2a31"><use href="#mark" x="104" y="96" width="92" height="92"/></g>
-      <g fill="currentColor"><rect x="36" y="136" width="3.5" height="12" rx="1"/><path d="M39 140.6h50l6 1.4-6 1.4H39z"/><rect x="260.5" y="136" width="3.5" height="12" rx="1"/><path d="M261 140.6h-50l-6 1.4 6 1.4h50z"/></g>
+      <g fill="currentColor"><rect x="34" y="134" width="5" height="16" rx="1.5"/><path d="M39 139.5h48l8 2.5-8 2.5H39z"/><rect x="261" y="134" width="5" height="16" rx="1.5"/><path d="M261 139.5h-48l-8 2.5 8 2.5h48z"/></g>
     </svg>
     <ul class="contact">
       <li><a href="tel:+18485257973"><svg aria-hidden="true"><use href="#i-phone"/></svg>848-525-7973</a></li>
@@ -349,8 +353,18 @@ var PLANK = PHONE ? 40 : 50;   // board width in CSS px (gap is 4px)
 function smsHref(body){ return 'sms:' + BIZ.phone + '?&body=' + encodeURIComponent(body); }
 (function(){
   var rows = document.querySelectorAll('.row[data-job]');
+  var chip = { 'Carpentry': 'Carpentry', 'Bathroom': 'Bathroom', 'Kitchen': 'Kitchen', 'Flooring and tile': 'Flooring / tile', 'Windows and doors': 'Windows / doors', 'Deck and railings': 'Deck / railings', 'Painting': 'Painting', 'Stucco': 'Stucco', 'A repair': 'Repair' };
+  var desk = window.matchMedia('(hover: hover) and (pointer: fine)').matches;   // sms: does nothing on most computers
+  if (desk) document.getElementById('rows-note').textContent = 'Pick one to start your estimate.';
   for (var i = 0; i < rows.length; i++) {
-    rows[i].href = smsHref('Hi Casi Construction! I found your website. I\'d like a free estimate for: ' + rows[i].getAttribute('data-job') + '.\nMy town: ');
+    var job = rows[i].getAttribute('data-job');
+    rows[i].setAttribute('aria-label', (desk ? 'Start an estimate for ' : 'Text me about ') + rows[i].textContent.trim().toLowerCase());
+    if (desk) {
+      rows[i].href = '#estimate';
+      rows[i].addEventListener('click', function(){ var c = document.querySelector('input[name=job][value="' + chip[this.getAttribute('data-job')] + '"]'); if (c) c.checked = true; });
+    } else {
+      rows[i].href = smsHref('Hi Casi Construction! I found your website. I\'d like a free estimate for: ' + job + '.\nMy town: ');
+    }
   }
 })();
 
@@ -393,7 +407,7 @@ function paintBoards(c, W, H, D, seed, kind){
   c.setTransform(D, 0, 0, D, 0, 0);
   c.fillStyle = '#211c18'; c.fillRect(0, 0, W, H);
   var joist = 16 * 9.4, jx0 = R() * joist;           // screws sit over joists, 16" on center
-  var rows = Math.ceil(H / step) + 1, y0 = -R() * PLANK * .5;
+  var rows = Math.ceil(H / step) + 1, y0r = R(), y0 = H <= step ? 0 : -y0r * PLANK * .5;   // a single plank sits flush
   for (var r = 0; r < rows; r++) {
     var y = y0 + r * step, x = -R() * 420;
     while (x < W) {
@@ -453,6 +467,7 @@ function paintBoards(c, W, H, D, seed, kind){
       x = x1;
     }
   }
+  return y0;
 }
 
 function Deck(wrap, opt){
@@ -460,65 +475,80 @@ function Deck(wrap, opt){
   var mk = function(){ return document.createElement('canvas'); };
   var fresh = mk(), old = mk(), tmp = mk(), mask = mk();
   var fx = fresh.getContext('2d'), ox = old.getContext('2d'), tx = tmp.getContext('2d'), mx = mask.getContext('2d');
-  var W = 0, H = 0, D = 1, MS = .5, dust = [], lastUser = -1e9;
+  var W = 0, H = 0, D = 1, Y0 = 0, dust = [], lastUser = -1e9, MAXD = opt.dust || DUST_MAX;
   var tool = { x: 0, y: 0, px: 0, py: 0, vx: 0, vy: 0, a: 0 };
-  var PW = PHONE ? 60 : 74, PH = PHONE ? 38 : 46;      // sander pad size
+  var PW = (PHONE ? 46 : 56) * (opt.scale || 1), PH = PW;   // square quarter-sheet pad
 
   function resize(){
     var r = wrap.getBoundingClientRect(), w = Math.round(r.width), h = Math.round(r.height);
     if (w === W && h === H || !w || !h) return;      // phones fire resize when the address bar moves: ignore same size
     W = w; H = h; D = Math.min(window.devicePixelRatio || 1, 1.5);
-    [cv, fresh, old, tmp].forEach(function(c){ c.width = Math.round(W * D); c.height = Math.round(H * D); });
-    mask.width = Math.ceil(W * D * MS); mask.height = Math.ceil(H * D * MS);
+    [cv, fresh, old, tmp, mask].forEach(function(c){ c.width = Math.round(W * D); c.height = Math.round(H * D); });
     paintBoards(fx, W, H, D, opt.seed, 'fresh');
-    paintBoards(ox, W, H, D, opt.seed, 'old');
+    Y0 = paintBoards(ox, W, H, D, opt.seed, 'old');
     mx.setTransform(1, 0, 0, 1, 0, 0); mx.globalCompositeOperation = 'source-over'; mx.globalAlpha = 1;
     mx.fillStyle = '#fff'; mx.fillRect(0, 0, mask.width, mask.height);
-    // start with a pass already sanded so the first frame shows both woods
-    var p = ghost(performance.now() / 1000 - 3);
-    for (var i = 0; i < 90; i++) { var q = ghost(performance.now() / 1000 - 3 + i * .033); sand(p.x, p.y, q.x, q.y, .5); p = q; }
+    var p = ghost(performance.now() / 1000 - 4);
+    if (!opt.track) {
+      // start with a couple of passes already sanded so the first frame shows both woods
+      for (var i = 0; i < 160; i++) { var q = ghost(performance.now() / 1000 - 6 + i * .033); sand(p.x, p.y, q.x, q.y, .45); p = q; }
+    }
     tool.x = tool.px = p.x; tool.y = tool.py = p.y;
     draw();
   }
 
   function ghost(t){
-    // long strokes along the grain, drifting slowly across the boards
-    return { x: W * (.5 + .36 * Math.sin(t * 1.25) + .06 * Math.sin(t * .37)), y: H * (.5 + .3 * Math.sin(t * .29 + 1) + .05 * Math.sin(t * 2.1)) };
+    if (opt.track) {
+      // scroll drives the sander along the one board
+      var r = wrap.getBoundingClientRect(), f = Math.max(0, Math.min(1, (window.innerHeight - r.top) / (window.innerHeight + r.height)));
+      return { x: PW * .6 + f * (W - PW * 1.2), y: H / 2 };
+    }
+    // full passes along the grain, one board at a time, stepping down then back up
+    var st = PLANK + 4, first = Y0 < 0 ? 1 : 0, last = Math.max(first + 1, Math.floor((H - Y0 - PLANK) / st));
+    var n = last - first + 1, per = 3.4, k = Math.floor(t / per), u = (t % per) / per;
+    var row = function(q){ q = ((q % (2 * (n - 1))) + 2 * (n - 1)) % (2 * (n - 1)); return first + (q < n ? q : 2 * (n - 1) - q); };
+    var s = .5 - .5 * Math.cos(Math.PI * Math.min(1, u / .85)), m = Math.max(0, (u - .85) / .15);
+    var y = Y0 + PLANK / 2 + st * (row(k) + (row(k + 1) - row(k)) * m);
+    return { x: W * (k % 2 ? .92 - .84 * s : .08 + .84 * s), y: y };
   }
 
   function sand(x0, y0, x1, y1, a){
-    var n = Math.max(1, Math.ceil(Math.hypot(x1 - x0, y1 - y0) / 10));
-    mx.save(); mx.globalCompositeOperation = 'destination-out';
+    // the square pad leaves crisp strips with a slight feather
+    var n = Math.max(1, Math.ceil(Math.hypot(x1 - x0, y1 - y0) / 6)), S = PW * D, f = 2 * D;
+    mx.save(); mx.setTransform(1, 0, 0, 1, 0, 0); mx.globalCompositeOperation = 'destination-out';
     for (var i = 1; i <= n; i++) {
-      var x = x0 + (x1 - x0) * i / n, y = y0 + (y1 - y0) * i / n;
-      mx.setTransform(D * MS, 0, 0, D * MS * .62, x * D * MS, y * D * MS);
-      var g = mx.createRadialGradient(0, 0, 0, 0, 0, PW * .62);
-      g.addColorStop(0, 'rgba(0,0,0,' + a + ')'); g.addColorStop(.78, 'rgba(0,0,0,' + a * .9 + ')'); g.addColorStop(1, 'rgba(0,0,0,0)');
-      mx.fillStyle = g; mx.beginPath(); mx.arc(0, 0, PW * .62, 0, 6.283); mx.fill();
+      var cx = (x0 + (x1 - x0) * i / n) * D, cy = (y0 + (y1 - y0) * i / n) * D;
+      mx.fillStyle = 'rgba(0,0,0,' + a * .45 + ')'; mx.fillRect(cx - S / 2 - f, cy - S / 2 - f, S + 2 * f, S + 2 * f);
+      mx.fillStyle = 'rgba(0,0,0,' + a + ')'; mx.fillRect(cx - S / 2, cy - S / 2, S, S);
     }
     mx.restore();
   }
 
   function spawn(n){
-    for (var i = 0; i < n && dust.length < DUST_MAX; i++) {
+    for (var i = 0; i < n && dust.length < MAXD; i++) {
       var ang = Math.random() * 6.283, sp = 40 + Math.random() * 140, l = Math.random();
       dust.push({ x: tool.x + Math.cos(ang) * PW * .5, y: tool.y + Math.sin(ang) * PH * .5, vx: Math.cos(ang) * sp + tool.vx * .25, vy: Math.sin(ang) * sp + tool.vy * .25,
         life: 0, max: 2.2 + Math.random() * 2.6, s: .8 + Math.random() * 1.6, c: l < .5 ? '232,200,150' : l < .85 ? '214,170,110' : '245,228,196' });
     }
   }
 
+  // top-down palm sander: square pad, yellow motor dome, rubber palm cap, dust bag, cord
   function drawTool(c, t){
-    var j = Math.sin(t * 90) * .7, k = Math.cos(t * 77) * .7;   // orbital buzz
+    var j = Math.sin(t * 90) * .6, k = Math.cos(t * 77) * .6, S = PW;
     c.save(); c.translate(tool.x + j, tool.y + k); c.rotate(tool.a);
-    c.shadowColor = 'rgba(20,12,6,.38)'; c.shadowBlur = 14; c.shadowOffsetX = 5; c.shadowOffsetY = 8;
-    c.fillStyle = '#c9b48b'; rr(c, -PW / 2 - 2, -PH / 2 - 2, PW + 4, PH + 4, 8); c.fill();   // sandpaper edge
-    c.shadowColor = 'transparent';
-    c.fillStyle = '#2b3136'; rr(c, -PW / 2, -PH / 2, PW, PH, 7); c.fill();                  // pad
-    c.fillStyle = '#3d454c'; rr(c, -PW / 2 + 5, -PH / 2 + 4, PW - 10, PH - 8, 9); c.fill();  // body
-    c.fillStyle = '#6b7278'; c.fillRect(-PW / 2 - 3, -5, 4, 10); c.fillRect(PW / 2 - 1, -5, 4, 10); // paper clamps
-    var g = c.createRadialGradient(-4, -5, 2, 0, 0, PH * .42);
-    g.addColorStop(0, '#d4573a'); g.addColorStop(1, '#8a2a16');
-    c.fillStyle = g; c.beginPath(); c.ellipse(0, 0, PW * .26, PH * .36, 0, 0, 6.283); c.fill();  // palm grip
+    c.strokeStyle = '#1d1f21'; c.lineWidth = Math.max(2, S * .055); c.lineCap = 'round';
+    c.beginPath(); c.moveTo(-S * .5, 0); c.bezierCurveTo(-S * 1.2, -S * .1, -S * 1.5, S * .5, -S * 2.4, S * .35); c.stroke();      // cord
+    c.shadowColor = 'rgba(20,12,6,.38)'; c.shadowBlur = 12; c.shadowOffsetX = 4; c.shadowOffsetY = 7;
+    c.fillStyle = '#5b6670'; rr(c, -S * 1.02, -S * .2, S * .5, S * .4, S * .14); c.fill();                                           // dust bag
+    c.fillStyle = '#2b3136'; rr(c, -S / 2, -S / 2, S, S, 6); c.fill(); c.shadowColor = 'transparent';                                // pad
+    c.fillStyle = '#cdb58a'; c.fillRect(-S / 2 - 2, -S / 2 + 3, 3, S - 6); c.fillRect(S / 2 - 1, -S / 2 + 3, 3, S - 6);              // paper edges
+    var g = c.createRadialGradient(-S * .12, -S * .16, S * .05, 0, 0, S * .48);
+    g.addColorStop(0, '#ffd75e'); g.addColorStop(.6, '#e2a612'); g.addColorStop(1, '#9c6f08');
+    c.fillStyle = g; c.beginPath(); c.ellipse(0, 0, S * .42, S * .4, 0, 0, 6.283); c.fill();                                        // motor dome
+    var h = c.createRadialGradient(-S * .07, -S * .08, 1, 0, 0, S * .24);
+    h.addColorStop(0, '#4a4f54'); h.addColorStop(1, '#16191b');
+    c.fillStyle = h; c.beginPath(); c.ellipse(0, 0, S * .24, S * .22, 0, 0, 6.283); c.fill();                                       // palm cap
+    c.fillStyle = '#16191b'; rr(c, S * .3, -S * .07, S * .12, S * .14, 2); c.fill();                                               // switch
     c.restore();
   }
   function rr(c, x, y, w, h, r){ c.beginPath(); c.moveTo(x + r, y); c.arcTo(x + w, y, x + w, y + h, r); c.arcTo(x + w, y + h, x, y + h, r); c.arcTo(x, y + h, x, y, r); c.arcTo(x, y, x + w, y, r); c.closePath(); }
@@ -527,12 +557,12 @@ function Deck(wrap, opt){
     ctx.setTransform(1, 0, 0, 1, 0, 0);
     ctx.drawImage(fresh, 0, 0);
     tx.globalCompositeOperation = 'copy'; tx.drawImage(old, 0, 0);
-    tx.globalCompositeOperation = 'destination-in'; tx.imageSmoothingEnabled = true; tx.drawImage(mask, 0, 0, tmp.width, tmp.height);
+    tx.globalCompositeOperation = 'destination-in'; tx.drawImage(mask, 0, 0);
     tx.globalCompositeOperation = 'source-over';
     ctx.drawImage(tmp, 0, 0);
     ctx.setTransform(D, 0, 0, D, 0, 0);
     for (var i = 0; i < dust.length; i++) { var p = dust[i]; ctx.fillStyle = 'rgba(' + p.c + ',' + (.9 * (1 - p.life / p.max)) + ')'; ctx.fillRect(p.x, p.y, p.s, p.s); }
-    if (!REDUCED || t) drawTool(ctx, (t || 0) / 1000);
+    drawTool(ctx, (t || 0) / 1000);
   }
 
   function tick(dt, now){
@@ -541,15 +571,16 @@ function Deck(wrap, opt){
     var lx = P.x - r.left, ly = P.y - r.top, user = P.active && lx > -20 && lx < W + 20 && ly > -20 && ly < H + 20;
     var tgx, tgy, ease, on = true;
     if (user) { lastUser = now; tgx = lx; tgy = ly; ease = .35; }
-    else if (now - lastUser > GHOST_DELAY) { var g = ghost(now / 1000); tgx = g.x; tgy = g.y; ease = .05; }
+    else if (now - lastUser > GHOST_DELAY) { var g = ghost(now / 1000); tgx = g.x; tgy = g.y; ease = opt.track ? .14 : .08; }
     else { tgx = tool.x; tgy = tool.y; ease = 0; on = false; }
-    tgx = Math.max(PW * .3, Math.min(W - PW * .3, tgx)); tgy = Math.max(PH * .3, Math.min(H - PH * .3, tgy));
+    tgx = Math.max(PW * .3, Math.min(W - PW * .3, tgx)); tgy = Math.max(Math.min(PH * .3, H / 2), Math.min(Math.max(H - PH * .3, H / 2), tgy));
     tool.px = tool.x; tool.py = tool.y;
     tool.x += (tgx - tool.x) * ease; tool.y += (tgy - tool.y) * ease;
     tool.vx = (tool.x - tool.px) / dt; tool.vy = (tool.y - tool.py) / dt;
     tool.a += ((Math.max(-.25, Math.min(.25, tool.vy * .0006))) - tool.a) * .1;
     var speed = Math.hypot(tool.vx, tool.vy);
-    if (on) { sand(tool.px, tool.py, tool.x, tool.y, SAND); spawn(Math.round((1 + Math.min(speed, 900) / 160) * (PHONE ? .7 : 1.2))); }
+    if (opt.track && !user) on = speed > 4;            // a resting page doesn't buzz
+    if (on) { sand(tool.px, tool.py, tool.x, tool.y, SAND); spawn(Math.round((1 + Math.min(speed, 900) / 160) * (PHONE ? .7 : 1.2) * (opt.scale || 1))); }
     // weathering creeps back
     mx.setTransform(1, 0, 0, 1, 0, 0); mx.globalAlpha = REGROW; mx.fillStyle = '#fff'; mx.fillRect(0, 0, mask.width, mask.height); mx.globalAlpha = 1;
     // sawdust skids, slows, gets shoved by the sander, fades
@@ -570,9 +601,10 @@ function Deck(wrap, opt){
 
 window.__decks = [];
 (function(){
-  [['hero-deck', 20261017], ['foot-deck', 848525]].forEach(function(d){
-    var el = document.getElementById(d[0]);
-    var deck = Deck(el, { seed: d[1] });
+  [['hero-deck', 20261017], ['plank-1', 1101, { track: 1, dust: 60, scale: .7 }], ['plank-2', 1102, { track: 1, dust: 60, scale: .7 }], ['foot-deck', 848525]].forEach(function(d){
+    var el = document.getElementById(d[0]), o = d[2] || {};
+    o.seed = d[1];
+    var deck = Deck(el, o);
     window.__decks.push(deck);
     Loop.add(deck, el);
   });
@@ -582,14 +614,18 @@ window.__decks = [];
 (function(){
   var form = document.getElementById('quote'), sent = document.getElementById('sent'), out = document.getElementById('sent-msg');
   function val(id){ return document.getElementById(id).value.trim(); }
-  function mark(id, bad){ document.getElementById(id).classList.toggle('bad', bad); }
+  function mark(id, bad){ var el = document.getElementById(id), i = el.querySelector('input[type=text]'); el.classList.toggle('bad', bad); if (i) i.setAttribute('aria-invalid', bad); }
   form.addEventListener('submit', function(e){
     e.preventDefault();
     var jobs = [].map.call(form.querySelectorAll('input[name=job]:checked'), function(i){ return i.value; });
     var details = val('details'), town = val('town'), name = val('name');
     mark('f-jobs', !jobs.length && !details); mark('f-town', !town); mark('f-name', !name);
-    var first = form.querySelector('.bad input, .bad textarea');
-    if (first) { (first.type === 'checkbox' ? first : first).focus(); return; }
+    var firstBad = form.querySelector('.bad');
+    if (firstBad) {
+      firstBad.scrollIntoView({ block: 'center', behavior: REDUCED ? 'auto' : 'smooth' });
+      (firstBad.querySelector('input:not([type=checkbox]),textarea') || firstBad.querySelector('input')).focus({ preventScroll: true });
+      return;
+    }
     var msg = 'Hi Casi Construction! I\'d like a free estimate.\n'
       + (jobs.length ? 'Work: ' + jobs.join(', ') + '\n' : '')
       + (details ? 'Details: ' + details + '\n' : '')

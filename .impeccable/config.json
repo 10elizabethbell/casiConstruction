@@ -1,0 +1,50 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "roboto",
+        "createdAt": "2026-10-17T22:22:22.905Z",
+        "reason": "pitch-site house rule (ellie-taste.md): system font stack; Roboto is only Android's system fallback"
+      },
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-17T22:22:22.980Z",
+        "reason": "ground taken from the client's white business card (brand evidence in PRODUCT.md)"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-17T22:29:32.866Z",
+        "reason": "flagged ul.rows top border is the list's rule line; rows carry 10px vertical padding"
+      },
+      {
+        "rule": "repeating-stripes-gradient",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-17T22:29:32.941Z",
+        "reason": "deck board fallback painted before the canvas draws (pitch-site build-notes: static fallback for the living element)"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-17T22:29:33.014Z",
+        "reason": "body steps 16-20px; display steps 26px to 90px headline give the hierarchy"
+      }
+    ]
+  }
+}
