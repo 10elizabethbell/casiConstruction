@@ -69,6 +69,8 @@ section{padding:64px 0}
 .on-navy .accent,.on-deep .accent,.hero .accent{color:var(--pine)}
 .head{display:grid;gap:16px;justify-items:start;max-width:640px}
 .lede{font-size:clamp(17px,4.6vw,19px);color:var(--soft);max-width:38ch}
+.lede.gap{margin-top:16px}
+.lede,.promise,.steps span{text-wrap:pretty}
 .on-navy .lede,.on-deep .lede{color:var(--on-dark-soft)}
 
 /* Eyebrow: a few key headings only. A label, not a button. */
@@ -135,6 +137,7 @@ section{padding:64px 0}
 .steps li::before{content:counter(s);width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--pine);color:var(--ink);font:400 20px/1 var(--display)}
 .steps b{display:block;font:400 21px/1.2 var(--display);color:var(--ink);margin-top:4px}
 .steps span{display:block;margin-top:4px;color:var(--soft)}
+#quoteForm{scroll-margin-top:16px}
 form{background:var(--card);border-radius:var(--r-card);padding:clamp(20px,5vw,32px);display:grid;gap:20px;max-width:600px}
 form h3{font-size:clamp(26px,7vw,34px)}
 .field{display:grid;gap:8px;min-width:0}
@@ -159,10 +162,11 @@ form .btn:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
 .after{font-size:15px;color:var(--soft)}
 .sent{display:grid;gap:14px;padding:18px;border-radius:var(--r-field);background:var(--paper)}
 .sent p{color:var(--ink)}
-.sent pre{margin:0;white-space:pre-wrap;font:16px/1.5 var(--text);color:var(--body)}
+.sent pre{user-select:all;-webkit-user-select:all;margin:0;white-space:pre-wrap;font:16px/1.5 var(--text);color:var(--body)}
 .sent .row2{display:grid;gap:10px}
 .sent .nw a{display:inline-block;padding:11px 0;margin:-11px 0;font-weight:600}
 @media (max-width:380px){.chips label{padding:0 14px}}
+@media (max-width:340px){.brand small{letter-spacing:.07em}.tel{gap:6px;font-size:16px}.tel svg{width:16px;height:16px}}
 
 /* ---------- Close ---------- */
 .close .who{margin-top:14px;font-size:clamp(18px,5vw,20px);color:var(--on-dark-soft)}
@@ -174,7 +178,7 @@ footer{background-color:var(--deep);background-image:var(--texture);color:var(--
 footer .wrap{display:grid;gap:14px;justify-items:start}
 .logo-arc{width:220px;height:auto;color:var(--on-dark)}
 .nw{white-space:nowrap}
-footer nav{display:flex;flex-wrap:wrap;gap:0 22px}
+footer nav{display:flex;flex-wrap:wrap;gap:0 22px;padding-right:72px}
 footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-dark);text-decoration:none}
 
 /* ---------- Floating text circle (one circle, never a bottom bar) ---------- */
@@ -200,13 +204,14 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-d
   .actions{grid-auto-flow:column;justify-content:start;width:auto}
   .actions .btn{min-width:240px}
   .jobs{grid-template-columns:1fr 1fr;column-gap:16px}
+  .jobs li:last-child:nth-child(odd){grid-column:1/-1}
 }
 @media (min-width:1024px){
   .split{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto 1fr;column-gap:64px;align-items:start}
   .split .claims{grid-column:2;grid-row:1/3;margin-top:0}
   .split .fb{grid-column:1;grid-row:2}
-  .svc .wrap{display:grid;grid-template-columns:1fr 1.6fr;gap:64px;align-items:start}
-  .svc .jobs{margin-top:0}
+  .jobs{grid-template-columns:repeat(3,1fr);margin-top:40px}
+  .jobs li:last-child:nth-child(odd){grid-column:auto}
   .ask .wrap{grid-template-columns:1fr 1.2fr;gap:64px;align-items:start}
   .ask .head{position:sticky;top:40px}
   .close .wrap{display:grid;grid-template-columns:1fr auto;gap:48px;align-items:end}
@@ -227,7 +232,9 @@ footer a:hover{color:var(--pine)}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
-  .js .rise,.float,.btn{transition:none}
+  .js .rise,.float{transition:none}
+  .btn{transition:background-color .2s,color .2s,border-color .2s}
+  .btn:active{transform:none}
   .js .rise.below{opacity:1;transform:none}
   .hero h1 .c{animation:none;opacity:1;transform:none}
 }
@@ -279,7 +286,7 @@ FORM: calm band system without photos (none supplied; the card photo isn't a her
   <div class="wrap split">
     <div class="rise">
       <h2 id="h-me">You deal with me.</h2>
-      <p class="lede" style="margin-top:16px">Call Casi Construction and you get Casimiro Diaz, from the estimate to the last screw.</p>
+      <p class="lede gap">Call Casi Construction and you talk to Casimiro Diaz about your job, big or small.</p>
     </div>
     <ul class="claims">
       <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 4l13 5v9c0 8.5-5.6 15.3-13 18-7.4-2.7-13-9.5-13-18V9z"/><path d="M14 20l4.5 4.5L27 16"/></svg>Licensed and insured</li>
@@ -300,15 +307,15 @@ FORM: calm band system without photos (none supplied; the card photo isn't a her
       <h2 id="h-what">What I <span class="accent">do.</span></h2>
     </div>
     <ul class="jobs">
-      <li class="rise"><a class="job" href="#estimate" data-pick="Carpentry">Carpentry<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
-      <li class="rise"><a class="job" href="#estimate" data-pick="Bathroom">Bathrooms<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
-      <li class="rise"><a class="job" href="#estimate" data-pick="Kitchen">Kitchens<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
-      <li class="rise"><a class="job" href="#estimate" data-pick="Flooring / tile">Flooring and tile<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
-      <li class="rise"><a class="job" href="#estimate" data-pick="Windows / doors">Windows and doors<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
-      <li class="rise"><a class="job" href="#estimate" data-pick="Deck / railings">Decks and railings<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
-      <li class="rise"><a class="job" href="#estimate" data-pick="Painting">Painting<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
-      <li class="rise"><a class="job" href="#estimate" data-pick="Stucco">Stucco<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
-      <li class="rise"><a class="job" href="#estimate" data-pick="Repair">Repairs<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a class="job" href="#quoteForm" data-pick="Carpentry">Carpentry<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a class="job" href="#quoteForm" data-pick="Bathroom">Bathrooms<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a class="job" href="#quoteForm" data-pick="Kitchen">Kitchens<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a class="job" href="#quoteForm" data-pick="Flooring / tile">Flooring and tile<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a class="job" href="#quoteForm" data-pick="Windows / doors">Windows and doors<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a class="job" href="#quoteForm" data-pick="Deck / railings">Decks and railings<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a class="job" href="#quoteForm" data-pick="Painting">Painting<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a class="job" href="#quoteForm" data-pick="Stucco">Stucco<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a class="job" href="#quoteForm" data-pick="Repair">Repairs<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
     </ul>
   </div>
 </section>
@@ -320,7 +327,7 @@ FORM: calm band system without photos (none supplied; the card photo isn't a her
       <h2 id="h-ask">No job is to small.</h2>
       <ol class="steps">
         <li><div><b>Tell me what's wrong.</b><span>Big or small, I want to hear about it.</span></div></li>
-        <li><div><b>Free estimate.</b><span>I look at the job and give you a straight price before anything starts.</span></div></li>
+        <li><div><b>A straight price.</b><span>I look at the job and give you a straight price before anything starts.</span></div></li>
         <li><div><b>I do the work.</b><span>Carefully, in your home, the way I'd want it done in mine.</span></div></li>
       </ol>
     </div>
@@ -329,15 +336,15 @@ FORM: calm band system without photos (none supplied; the card photo isn't a her
       <fieldset class="field" id="f-jobs">
         <legend>What's the job?</legend>
         <div class="chips">
-          <input type="checkbox" name="job" id="j1" value="Carpentry"><label for="j1">Carpentry</label>
-          <input type="checkbox" name="job" id="j2" value="Bathroom"><label for="j2">Bathroom</label>
-          <input type="checkbox" name="job" id="j3" value="Kitchen"><label for="j3">Kitchen</label>
-          <input type="checkbox" name="job" id="j4" value="Flooring / tile"><label for="j4">Flooring / tile</label>
-          <input type="checkbox" name="job" id="j5" value="Windows / doors"><label for="j5">Windows / doors</label>
-          <input type="checkbox" name="job" id="j6" value="Deck / railings"><label for="j6">Deck / railings</label>
-          <input type="checkbox" name="job" id="j7" value="Painting"><label for="j7">Painting</label>
-          <input type="checkbox" name="job" id="j8" value="Stucco"><label for="j8">Stucco</label>
-          <input type="checkbox" name="job" id="j9" value="Repair"><label for="j9">Repair</label>
+          <input type="checkbox" name="job" id="j1" value="Carpentry" aria-describedby="e-jobs"><label for="j1">Carpentry</label>
+          <input type="checkbox" name="job" id="j2" value="Bathroom" aria-describedby="e-jobs"><label for="j2">Bathroom</label>
+          <input type="checkbox" name="job" id="j3" value="Kitchen" aria-describedby="e-jobs"><label for="j3">Kitchen</label>
+          <input type="checkbox" name="job" id="j4" value="Flooring / tile" aria-describedby="e-jobs"><label for="j4">Flooring / tile</label>
+          <input type="checkbox" name="job" id="j5" value="Windows / doors" aria-describedby="e-jobs"><label for="j5">Windows / doors</label>
+          <input type="checkbox" name="job" id="j6" value="Deck / railings" aria-describedby="e-jobs"><label for="j6">Deck / railings</label>
+          <input type="checkbox" name="job" id="j7" value="Painting" aria-describedby="e-jobs"><label for="j7">Painting</label>
+          <input type="checkbox" name="job" id="j8" value="Stucco" aria-describedby="e-jobs"><label for="j8">Stucco</label>
+          <input type="checkbox" name="job" id="j9" value="Repair" aria-describedby="e-jobs"><label for="j9">Repair</label>
         </div>
         <p class="err" id="e-jobs">Pick one, or tell me about the job below.</p>
       </fieldset>
@@ -356,6 +363,7 @@ FORM: calm band system without photos (none supplied; the card photo isn't a her
         <p class="err" id="e-name">Add your name so I know who's texting.</p>
       </div>
       <button class="btn btn-primary" type="submit"><svg aria-hidden="true"><use href="#i-chat"/></svg>Text this to Casimiro</button>
+      <noscript><p class="after">Or text or call Casimiro at 848-525-7973.</p></noscript>
       <p class="after">Opens your messages with this written out. You just press send.</p>
       <div class="sent" id="sent" role="status" hidden>
         <p>Didn't open your messages? Here's the message:</p>
@@ -391,7 +399,6 @@ FORM: calm band system without photos (none supplied; the card photo isn't a her
     </svg>
     <span>Casi Construction, LLC · Forked River, NJ · Licensed and insured</span>
     <nav aria-label="Contact">
-      <a class="nw" href="tel:+18485257973">848-525-7973</a>
       <a href="mailto:casiconstructionllc@gmail.com">casiconstructionllc@gmail.com</a>
       <a href="https://www.facebook.com/profile.php?id=100092566353025" rel="noopener">Facebook</a>
     </nav>
