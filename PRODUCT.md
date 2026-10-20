@@ -17,7 +17,7 @@ A licensed and insured local carpenter / general contractor who takes small jobs
 ## Capabilities and constraints
 - Contact: phone 848-525-7973 (calls; texts unknown). Email casiconstructionllc@gmail.com read from the flyer by OCR, unverified.
 - No booking system, no prices, no hours, no reviews, no work photos.
-- Must work one-handed on a phone on cellular; no tracking, no frameworks, no external fonts.
+- Must work one-handed on a phone on cellular; no tracking, no frameworks. The only external resource is Cal Sans (Google Fonts) for headings (house calm band style, 2026-10-19).
 
 ## Brand commitments
 - Logo: business card with "CASI CONSTRUCTION" set in an arch over a black circle holding a claw hammer, a nail on each side. Black ink on white card. (Source: Facebook profile picture of Casimiro Diaz, fetched 2026-10-17.)
@@ -33,4 +33,5 @@ A licensed and insured local carpenter / general contractor who takes small jobs
 1. Phone first; the first screen shows who, what, and the estimate action.
 2. Only real facts; nothing invented (no reviews, years, prices, or photos of other people's work).
 3. Speak as the owner, about how he treats your home.
-4. The page should feel like the trade: wood, sawdust, a chalk line.
+4. Calm and orderly (house calm band style after lpmr.co.uk): paper and navy bands, one warm accent used as a fill, his card's hammer mark and arched name.
+5. Audience: treated as general homeowners (motion on). Lacey Township skews older; the brief doesn't flag a 40+ audience, so `CONFIG.MOTION` can switch the motion off if Ellie decides it is one (inferred, open question).
