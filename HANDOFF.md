@@ -67,6 +67,7 @@
 - `book.html` booking page; Spanish toggle (ask him).
 
 ## Not verified
+- Known: the form fields' fill (`--field #e6ecf5`) is only 1.19:1 against the white card, the same as the sibling calm builds. Labels identify every field, but it is not a 3:1 edge (WCAG 1.4.11). A faint border would fix it; the calm style says borderless, so Ellie's call.
 - Real-device SMS handoff on iOS and Android, and inside Facebook's in-app browser (`sms:+1…?&body=`).
 - Real iPhone rendering of Cal Sans loading on cellular (falls back to Avenir Next / system).
 - The Facebook link preview with the new `og.png` (Sharing Debugger after Pages caches it).

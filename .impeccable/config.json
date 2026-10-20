@@ -20,6 +20,15 @@
         ],
         "createdAt": "2026-10-20T01:22:39.723Z",
         "reason": "body steps 14-20px are the calm style's body/label sizes; display steps 26-88px Cal Sans carry the hierarchy (pitch-site calm-photo-style.md item 4)"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "6px",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-20T01:31:52.929Z",
+        "reason": "6px is the corner of the global :focus-visible outline (line 55) only, not a surface shape; deliberately left out of the DESIGN.md rounded scale (2026-10-19)"
       }
     ]
   }
